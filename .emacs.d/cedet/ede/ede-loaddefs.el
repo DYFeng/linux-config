@@ -107,7 +107,7 @@ ROOTPROJ is nil, since there is only one project.
 ;;;***
 
 ;;;### (autoloads (ede-arduino-load ede-arduino-file ede-arduino-root)
-;;;;;;  "ede-arduino" "ede-arduino.el" (20362 59692))
+;;;;;;  "ede-arduino" "ede-arduino.el" (20437 48586))
 ;;; Generated autoloads from ede-arduino.el
 
 (autoload 'ede-arduino-root "ede-arduino" "\
@@ -290,7 +290,7 @@ the current EDE project.
 ;;;***
 
 ;;;### (autoloads (ede-enable-generic-projects ede-generic-load)
-;;;;;;  "ede-generic" "ede-generic.el" (20362 59692))
+;;;;;;  "ede-generic" "ede-generic.el" (20439 41214))
 ;;; Generated autoloads from ede-generic.el
 
 (autoload 'ede-generic-load "ede-generic" "\
@@ -443,8 +443,8 @@ Argument NEWVERSION is the version number to use in the current project.
 ;;;;;;  "ede-proj-elisp.el" "ede-proj-info.el" "ede-proj-misc.el"
 ;;;;;;  "ede-proj-obj.el" "ede-proj-prog.el" "ede-proj-scheme.el"
 ;;;;;;  "ede-proj-shared.el" "ede-proj-skel.el" "ede-source.el" "ede-speedbar.el"
-;;;;;;  "ede-system.el" "makefile-edit.el" "project-am.el") (20437
-;;;;;;  43855 426925))
+;;;;;;  "ede-system.el" "makefile-edit.el" "project-am.el") (20439
+;;;;;;  41749 835520))
 
 ;;;***
 

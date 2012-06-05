@@ -136,10 +136,13 @@
 
 
 
-;; 声明定义切换
-(define-key c-mode-base-map (kbd "<f3>") 'semantic-ia-fast-jump)
-(define-key c-mode-base-map (kbd "<S-f3>") 'semantic-mrub-switch-tags)
+;;跳转到声明
+(define-key c-mode-base-map (kbd "<f3>") 'semantic-ia-fast-jump) 
 
+;;跳转到实现
+(define-key c-mode-base-map (kbd "<S-f3>") 'semantic-analyze-proto-impl-toggle)
+
+;;进入头文件
 (define-key semantic-decoration-on-include-map (kbd "<f3>") 'semantic-decoration-include-visit)
 
 
@@ -169,73 +172,73 @@
 
 ;;(require 'ede-generic)
 
-(require 'ede-cmake)			
-
-;; Example only
-(defvar my-project-root-build-directories
-  '(("None" . "build")
-    ("Debug" . "debug")
-    ("Release" . "release"))
-  "Alist of build directories in the project root"
- )
-
-(defun my-project-root-build-locator (config root-dir)
-  "Locates a build directory in the project root, uses
-project-root-build-directories to look up the name."
-  (cdr (assoc config my-project-root-build-directories)))
-
-(defun my-load-project (dir)
-  "Load a project of type `ede-cmake-cpp-project' for the directory DIR.
-     Return nil if there isn't one."
-  (ede-cmake-cpp-project 
-   (file-name-nondirectory (directory-file-name dir))
-   :directory dir
-   :locate-build-directory 'my-project-root-build-locator
-   :build-tool (cmake-make-build-tool "Make" :additional-parameters " -kr")
-   :include-path '( "/" )
-   :system-include-path (list (expand-file-name "external" dir) )
-   ))
-
-(defun ede-cmake-cpp-project-load (dir)
-  "Return an CMake project object if there is one.
-Return nil if there isn't one.
-Argument DIR is the directory it is created for.
-ROOTPROJ is nil, sinc there is only one project for a directory tree."
-  (let* ((root (ede-cmake-cpp-project-root dir))
-	 (proj (and root (ede-directory-get-open-project root)))
-	 )
-    (if proj
-	proj
-
-      (when root
-	;; Create a new project here.
-	(let* ((name (file-name-nondirectory (directory-file-name root))))
-	  (setq proj (ede-cmake-cpp-project
-		      name
-		      :name name
-		      :directory (file-name-as-directory dir)
-		      :locate-build-directory 'my-project-root-build-locator
-		      :build-tool (cmake-make-build-tool "Make" :additional-parameters " -kr")
-		      :include-path '( "/" )		      
-		      :file "CMakeLists.txt"
-		      :targets nil)))
-	(ede-add-project-to-global-list proj)
-	))))
-
-  ;; (ede-generic-new-autoloader "generic-cmake" "CMake"
-  ;; 			      "CMakeLists.txt" 'ede-cmake-cpp-project)
-
-
-(ede-add-project-autoload
- (ede-project-autoload "CMake"
-		       :name "generic-cmake"
-                       :file 'ede-cmake
-                       :proj-file "CMakeLists.txt"
-                       :proj-root 'ede-cmake-cpp-project-root
-                       :proj-root-dirmatch ""
-                       :load-type 'ede-cmake-cpp-project-load
-                       :class-sym 'ede-cmake-cpp-project)
- 'unique)
+;; (require 'ede-cmake)			
+;; 
+;; ;; Example only
+;; (defvar my-project-root-build-directories
+;;   '(("None" . "build")
+;;     ("Debug" . "debug")
+;;     ("Release" . "release"))
+;;   "Alist of build directories in the project root"
+;;  )
+;; 
+;; (defun my-project-root-build-locator (config root-dir)
+;;   "Locates a build directory in the project root, uses
+;; project-root-build-directories to look up the name."
+;;   (cdr (assoc config my-project-root-build-directories)))
+;; 
+;; (defun my-load-project (dir)
+;;   "Load a project of type `ede-cmake-cpp-project' for the directory DIR.
+;;      Return nil if there isn't one."
+;;   (ede-cmake-cpp-project 
+;;    (file-name-nondirectory (directory-file-name dir))
+;;    :directory dir
+;;    :locate-build-directory 'my-project-root-build-locator
+;;    :build-tool (cmake-make-build-tool "Make" :additional-parameters " -kr")
+;;    :include-path '( "/" )
+;;    :system-include-path (list (expand-file-name "external" dir) )
+;;    ))
+;; 
+;; (defun ede-cmake-cpp-project-load (dir)
+;;   "Return an CMake project object if there is one.
+;; Return nil if there isn't one.
+;; Argument DIR is the directory it is created for.
+;; ROOTPROJ is nil, sinc there is only one project for a directory tree."
+;;   (let* ((root (ede-cmake-cpp-project-root dir))
+;; 	 (proj (and root (ede-directory-get-open-project root)))
+;; 	 )
+;;     (if proj
+;; 	proj
+;; 
+;;       (when root
+;; 	;; Create a new project here.
+;; 	(let* ((name (file-name-nondirectory (directory-file-name root))))
+;; 	  (setq proj (ede-cmake-cpp-project
+;; 		      name
+;; 		      :name name
+;; 		      :directory (file-name-as-directory dir)
+;; 		      :locate-build-directory 'my-project-root-build-locator
+;; 		      :build-tool (cmake-make-build-tool "Make" :additional-parameters " -kr")
+;; 		      :include-path '( "/" )		      
+;; 		      :file "CMakeLists.txt"
+;; 		      :targets nil)))
+;; 	(ede-add-project-to-global-list proj)
+;; 	))))
+;; 
+;;   ;; (ede-generic-new-autoloader "generic-cmake" "CMake"
+;;   ;; 			      "CMakeLists.txt" 'ede-cmake-cpp-project)
+;; 
+;; 
+;; (ede-add-project-autoload
+;;  (ede-project-autoload "CMake"
+;; 		       :name "generic-cmake"
+;;                        :file 'ede-cmake
+;;                        :proj-file "CMakeLists.txt"
+;;                        :proj-root 'ede-cmake-cpp-project-root
+;;                        :proj-root-dirmatch ""
+;;                        :load-type 'ede-cmake-cpp-project-load
+;;                        :class-sym 'ede-cmake-cpp-project)
+;;  'unique)
 
 
 
@@ -565,7 +568,8 @@ ROOTPROJ is nil, sinc there is only one project for a directory tree."
   ;; If you edit it by hand, you could mess it up, so be careful.
   ;; Your init file should contain only one such instance.
   ;; If there is more than one, they won't work right.
- '(ede-project-directories (quote ("/home/feng/fun/lab" "/home/feng/fun/AirRobotControler"))))
+ '(ecb-options-version "2.40")
+ '(ede-project-directories (quote ("/home/feng/fun/afrodevices-read-only/baseflight" "/home/feng/fun/lab" "/home/feng/fun/AirRobotControler"))))
 (custom-set-faces
   ;; custom-set-faces was added by Custom.
   ;; If you edit it by hand, you could mess it up, so be careful.

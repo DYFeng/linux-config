@@ -437,7 +437,7 @@ the class `ede-generic-project' project."
   (ede-generic-new-autoloader "generic-scons" "SCons"
 			      "SConstruct" 'ede-generic-scons-project)
   (ede-generic-new-autoloader "generic-cmake" "CMake"
-			      "CMakeLists" 'ede-generic-cmake-project)
+			      "CMakeLists.txt" 'ede-generic-cmake-project)
   )
 
 
