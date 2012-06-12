@@ -1,0 +1,705 @@
+let SessionLoad = 1
+if &cp | set nocp | endif
+let s:cpo_save=&cpo
+set cpo&vim
+inoremap <S-Tab> 
+imap <silent> <Plug>IMAP_JumpBack =IMAP_Jumpfunc('b', 0)
+imap <silent> <Plug>IMAP_JumpForward =IMAP_Jumpfunc('', 0)
+imap <F12> :call Test()
+imap <F4> :A
+map! <S-Insert> <MiddleMouse>
+vmap  "+y
+map  :call NERDComment(1,'toggle')
+map  :/
+map  :Dox
+noremap  h
+noremap <NL> j
+noremap  k
+noremap  l
+map  
+map  :update
+map  "+gp
+nmap <silent>  o
+nmap <silent> o <Plug>ProjectOnly
+vmap  "+x
+map  u
+vmap ,gq :s/\s\+/ /ggvgq
+nmap ,gq :%s/\s\+/ /ggq1G
+imap  :call CodeFormat()
+vmap [% [%m'gv``
+nmap \ihn :IHN
+nmap \is :IHS:A
+nmap \ih :IHS
+map \mbt <Plug>TMiniBufExplorer
+map \mbu <Plug>UMiniBufExplorer
+map \mbc <Plug>CMiniBufExplorer
+map \mbe <Plug>MiniBufExplorer
+nmap <silent> \ba <Plug>BufKillAlt
+nmap <silent> \bundo <Plug>BufKillUndo
+nmap <silent> \!bw <Plug>BufKillBangBw
+nmap <silent> \bw <Plug>BufKillBw
+nmap <silent> \!bd <Plug>BufKillBangBd
+nmap <silent> \bd <Plug>BufKillBd
+nmap <silent> \!bun <Plug>BufKillBangBun
+nmap <silent> \bun <Plug>BufKillBun
+nmap <silent> \bf <Plug>BufKillForward
+nmap <silent> \bb <Plug>BufKillBack
+nmap \ca <Plug>NERDCommenterAltDelims
+xmap \cu <Plug>NERDCommenterUncomment
+nmap \cu <Plug>NERDCommenterUncomment
+xmap \cb <Plug>NERDCommenterAlignBoth
+nmap \cb <Plug>NERDCommenterAlignBoth
+xmap \cl <Plug>NERDCommenterAlignLeft
+nmap \cl <Plug>NERDCommenterAlignLeft
+nmap \cA <Plug>NERDCommenterAppend
+xmap \cy <Plug>NERDCommenterYank
+nmap \cy <Plug>NERDCommenterYank
+xmap \cs <Plug>NERDCommenterSexy
+nmap \cs <Plug>NERDCommenterSexy
+xmap \ci <Plug>NERDCommenterInvert
+nmap \ci <Plug>NERDCommenterInvert
+nmap \c$ <Plug>NERDCommenterToEOL
+xmap \cn <Plug>NERDCommenterNested
+nmap \cn <Plug>NERDCommenterNested
+xmap \cm <Plug>NERDCommenterMinimal
+nmap \cm <Plug>NERDCommenterMinimal
+xmap \c  <Plug>NERDCommenterToggle
+nmap \c  <Plug>NERDCommenterToggle
+xmap \cc <Plug>NERDCommenterComment
+nmap \cc <Plug>NERDCommenterComment
+map \c :call CreateFunctionDef()
+vmap ]% ]%m'gv``
+vmap _j :call Justify('tw',4)
+nmap _j :%call Justify('tw',4)
+vmap a% [%v]%
+nmap gx <Plug>NetrwBrowseX
+nnoremap <silent> <Plug>NetrwBrowseX :call netrw#NetrwBrowseX(expand("<cWORD>"),0)
+noremap <C-Right> l
+noremap <C-Left> h
+noremap <C-Up> k
+noremap <C-Down> j
+xnoremap <silent> <Plug>NERDCommenterUncomment :call NERDComment("x", "Uncomment")
+nnoremap <silent> <Plug>NERDCommenterUncomment :call NERDComment("n", "Uncomment")
+xnoremap <silent> <Plug>NERDCommenterAlignBoth :call NERDComment("x", "AlignBoth")
+nnoremap <silent> <Plug>NERDCommenterAlignBoth :call NERDComment("n", "AlignBoth")
+xnoremap <silent> <Plug>NERDCommenterAlignLeft :call NERDComment("x", "AlignLeft")
+nnoremap <silent> <Plug>NERDCommenterAlignLeft :call NERDComment("n", "AlignLeft")
+nnoremap <silent> <Plug>NERDCommenterAppend :call NERDComment("n", "Append")
+xnoremap <silent> <Plug>NERDCommenterYank :call NERDComment("x", "Yank")
+nnoremap <silent> <Plug>NERDCommenterYank :call NERDComment("n", "Yank")
+xnoremap <silent> <Plug>NERDCommenterSexy :call NERDComment("x", "Sexy")
+nnoremap <silent> <Plug>NERDCommenterSexy :call NERDComment("n", "Sexy")
+xnoremap <silent> <Plug>NERDCommenterInvert :call NERDComment("x", "Invert")
+nnoremap <silent> <Plug>NERDCommenterInvert :call NERDComment("n", "Invert")
+nnoremap <silent> <Plug>NERDCommenterToEOL :call NERDComment("n", "ToEOL")
+xnoremap <silent> <Plug>NERDCommenterNested :call NERDComment("x", "Nested")
+nnoremap <silent> <Plug>NERDCommenterNested :call NERDComment("n", "Nested")
+xnoremap <silent> <Plug>NERDCommenterMinimal :call NERDComment("x", "Minimal")
+nnoremap <silent> <Plug>NERDCommenterMinimal :call NERDComment("n", "Minimal")
+xnoremap <silent> <Plug>NERDCommenterToggle :call NERDComment("x", "Toggle")
+nnoremap <silent> <Plug>NERDCommenterToggle :call NERDComment("n", "Toggle")
+xnoremap <silent> <Plug>NERDCommenterComment :call NERDComment("x", "Comment")
+nnoremap <silent> <Plug>NERDCommenterComment :call NERDComment("n", "Comment")
+vmap <silent> <Plug>IMAP_JumpBack `<i=IMAP_Jumpfunc('b', 0)
+vmap <silent> <Plug>IMAP_JumpForward i=IMAP_Jumpfunc('', 0)
+vmap <silent> <Plug>IMAP_DeleteAndJumpBack "_<Del>i=IMAP_Jumpfunc('b', 0)
+vmap <silent> <Plug>IMAP_DeleteAndJumpForward "_<Del>i=IMAP_Jumpfunc('', 0)
+nmap <silent> <Plug>IMAP_JumpBack i=IMAP_Jumpfunc('b', 0)
+nmap <silent> <Plug>IMAP_JumpForward i=IMAP_Jumpfunc('', 0)
+map <S-F12> : 
+map <F4> :A
+map <S-Insert> <MiddleMouse>
+imap  :call NERDComment(1,'toggle')
+imap  :/
+imap  :Dox
+imap 	 
+imap <NL> <Plug>IMAP_JumpForward
+imap  
+imap  :update
+imap  "+gp
+cmap  +
+imap  =CtrlXPP()
+imap  u
+map  :call CodeFormat()
+imap \ihn :IHN
+imap \is :IHS:A
+imap \ih :IHS
+let &cpo=s:cpo_save
+unlet s:cpo_save
+set autochdir
+set autowriteall
+set background=dark
+set backspace=indent,eol,start
+set balloonexpr=BalloonDeclaration()
+set comments=sO:*\ -,mO:*\ \ ,exO:*/,s1:/*,mb:*,ex:*/,://
+set completeopt=preview,menuone
+set noequalalways
+set expandtab
+set fileencodings=ucs-bom,utf-8,default,latin1
+set formatoptions=tcroql
+set guifont=YaHei\ Consolas\ Hybrid\ 13
+set guioptions=aegimrLt
+set helplang=cn
+set history=50
+set imdisable
+set nomodeline
+set mouse=a
+set mousemodel=popup
+set printoptions=paper:a4
+set ruler
+set runtimepath=~/.vim,~/.vim/vim-addons/cmake%599,~/.vim/vim-addons/FencView,~/.vim/vim-addons/vim-latex,~/.vim/vim-addons/echofunc,~/.vim/vim-addons/The_NERD_Commenter,~/.vim/vim-addons/SuperTab,~/.vim/vim-addons/project.tar.gz,~/.vim/vim-addons/bufkill,~/.vim/vim-addons/minibufexpl,~/.vim/vim-addons/Tagbar,~/.vim/vim-addons/DoxygenToolkit,~/.vim/vim-addons/Color_Sampler_Pack,~/.vim/vim-addons/a,~/.vim/vim-addons/clang,~/.vim/vim-addons/clang_complete,~/.vim/vim-addons/sessionman,~/.vim/vim-addons/winmanager%1440,/var/lib/vim/addons,/usr/share/vim/vimfiles,/usr/share/vim/vim73,/usr/share/vim/vimfiles/after,/var/lib/vim/addons/after,~/.vim/after,~/.vim/vim-addons/vim-addon-manager
+set shiftwidth=4
+set smarttab
+set statusline=%F
+set suffixes=.bak,~,.swp,.o,.info,.aux,.log,.dvi,.bbl,.blg,.brf,.cb,.ind,.idx,.ilg,.inx,.out,.toc
+set tabstop=4
+set tags=./tags;
+set termencoding=utf-8
+set wildmenu
+set wildmode=longest:full,full
+set winaltkeys=no
+set window=45
+set winwidth=1
+let s:so_save = &so | let s:siso_save = &siso | set so=0 siso=0
+let v:this_session=expand("<sfile>:p")
+silent only
+cd ~/fun/AirRobotControler/lib
+if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
+  let s:wipebuf = bufnr('%')
+endif
+set shortmess=aoO
+badd +4 ~/fun/AirRobotControler/lib/common.h
+badd +26 ~/fun/AirRobotControler/lib/controlerSocket.cpp
+badd +33 ~/.vimrc
+badd +14 ~/fun/AirRobotControler/lib/CMakeLists.txt
+badd +34 ~/fun/AirRobotControler/lib/controlerSocket_test.cpp
+badd +8 ~/fun/AirRobotControler/CMakeLists.txt
+silent! argdel *
+edit ~/.vimprojects
+set splitbelow splitright
+wincmd _ | wincmd |
+vsplit
+1wincmd h
+wincmd w
+wincmd _ | wincmd |
+split
+wincmd _ | wincmd |
+split
+2wincmd k
+wincmd w
+wincmd w
+set nosplitbelow
+set nosplitright
+wincmd t
+set winheight=1 winwidth=1
+exe 'vert 1resize ' . ((&columns * 24 + 54) / 109)
+exe '2resize ' . ((&lines * 2 + 23) / 46)
+exe 'vert 2resize ' . ((&columns * 84 + 54) / 109)
+exe '3resize ' . ((&lines * 30 + 23) / 46)
+exe 'vert 3resize ' . ((&columns * 84 + 54) / 109)
+exe '4resize ' . ((&lines * 10 + 23) / 46)
+exe 'vert 4resize ' . ((&columns * 84 + 54) / 109)
+argglobal
+let s:cpo_save=&cpo
+set cpo&vim
+nnoremap <buffer> <silent>  <Nop>
+nnoremap <buffer> <silent>   |:silent exec 'vertical resize '.(match(g:proj_flags, '\Ct')!=-1 && winwidth('.') > g:proj_window_width?(g:proj_window_width):(winwidth('.') + g:proj_window_increment))
+nmap <buffer> <silent> \<Down> <C-Down>
+nmap <buffer> <silent> \<Up> <C-Up>
+nmap <buffer> <silent> \v 
+nnoremap <buffer> <silent> \I :echo Project_GetFname(line('.'))
+nmap <buffer> <silent> \o <C-CR>
+nmap <buffer> <silent> \s <S-CR>
+nnoremap <buffer> <F1> :let g:proj_doinghelp = 1<F1>
+nmap <buffer> <silent> <4-RightMouse>  
+nmap <buffer> <silent> <3-RightMouse>  
+nmap <buffer> <silent> <2-RightMouse>  
+nmap <buffer> <silent> <RightMouse>  
+nnoremap <buffer> <silent> <3-LeftMouse> <Nop>
+nnoremap <buffer> <silent> <C-LeftMouse> <LeftMouse>
+nmap <buffer> <silent> <C-2-LeftMouse> <C-CR>
+nnoremap <buffer> <silent> <S-LeftMouse> <LeftMouse>
+nnoremap <buffer> <silent> <M-2-LeftMouse> 
+nmap <buffer> <silent>  p
+cnoremap <buffer> help let g:proj_doinghelp = 1:help
+let &cpo=s:cpo_save
+unlet s:cpo_save
+setlocal keymap=
+setlocal noarabic
+setlocal noautoindent
+setlocal balloonexpr=
+setlocal nobinary
+setlocal bufhidden=
+setlocal nobuflisted
+setlocal buftype=
+setlocal nocindent
+setlocal cinkeys=0{,0},0),:,0#,!^F,o,O,e
+setlocal cinoptions=
+setlocal cinwords=if,else,while,do,for,switch
+setlocal colorcolumn=
+setlocal comments=s1:/*,mb:*,ex:*/,://,b:#,:%,:XCOMM,n:>,fb:-
+setlocal commentstring=%s
+setlocal complete=.,w,b,u,t,i
+setlocal concealcursor=
+setlocal conceallevel=0
+setlocal completefunc=
+setlocal nocopyindent
+setlocal cryptmethod=
+setlocal nocursorbind
+setlocal nocursorcolumn
+set cursorline
+setlocal cursorline
+setlocal define=
+setlocal dictionary=
+setlocal nodiff
+setlocal equalprg=
+setlocal errorformat=
+setlocal expandtab
+if &filetype != ''
+setlocal filetype=
+endif
+setlocal foldcolumn=0
+setlocal foldenable
+setlocal foldexpr=0
+setlocal foldignore=#
+setlocal foldlevel=0
+setlocal foldmarker={,}
+setlocal foldmethod=marker
+setlocal foldminlines=1
+setlocal foldnestmax=20
+setlocal foldtext=ProjFoldText()
+setlocal formatexpr=
+setlocal formatoptions=tcroql
+setlocal formatlistpat=^\\s*\\d\\+[\\]:.)}\\t\ ]\\s*
+setlocal grepprg=
+setlocal iminsert=0
+setlocal imsearch=2
+setlocal include=
+setlocal includeexpr=
+setlocal indentexpr=
+setlocal indentkeys=0{,0},:,0#,!^F,o,O,e
+setlocal noinfercase
+setlocal iskeyword=@,48-57,_,192-255
+setlocal keywordprg=
+setlocal nolinebreak
+setlocal nolisp
+setlocal nolist
+setlocal makeprg=
+setlocal matchpairs=(:),{:},[:]
+setlocal nomodeline
+setlocal modifiable
+setlocal nrformats=octal,hex
+set number
+setlocal nonumber
+setlocal numberwidth=4
+setlocal omnifunc=
+setlocal path=
+setlocal nopreserveindent
+setlocal nopreviewwindow
+setlocal quoteescape=\\
+setlocal noreadonly
+setlocal norelativenumber
+setlocal norightleft
+setlocal rightleftcmd=search
+setlocal noscrollbind
+setlocal shiftwidth=1
+setlocal noshortname
+setlocal nosmartindent
+setlocal softtabstop=0
+setlocal nospell
+setlocal spellcapcheck=[.?!]\\_[\\])'\"\	\ ]\\+
+setlocal spellfile=
+setlocal spelllang=en
+setlocal statusline=
+setlocal suffixesadd=
+setlocal noswapfile
+setlocal synmaxcol=3000
+if &syntax != ''
+setlocal syntax=
+endif
+setlocal tabstop=4
+setlocal tags=
+setlocal textwidth=0
+setlocal thesaurus=
+setlocal noundofile
+setlocal nowinfixheight
+setlocal nowinfixwidth
+setlocal nowrap
+setlocal wrapmargin=0
+3
+normal zo
+3
+normal zo
+86
+normal zo
+91
+normal zo
+86
+normal zo
+let s:l = 96 - ((95 * winheight(0) + 22) / 44)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+96
+normal! 0
+wincmd w
+argglobal
+enew
+file ~/fun/AirRobotControler/lib/-MiniBufExplorer-
+let s:cpo_save=&cpo
+set cpo&vim
+nnoremap <buffer> 	 :call search('\[[0-9]*:[^\]]*\]'):<BS>
+nnoremap <buffer> j gj
+nnoremap <buffer> k gk
+nnoremap <buffer> p :wincmd p:<BS>
+nnoremap <buffer> <S-Tab> :call search('\[[0-9]*:[^\]]*\]','b'):<BS>
+nnoremap <buffer> <Up> gk
+nnoremap <buffer> <Down> gj
+let &cpo=s:cpo_save
+unlet s:cpo_save
+setlocal keymap=
+setlocal noarabic
+setlocal noautoindent
+setlocal balloonexpr=
+setlocal nobinary
+setlocal bufhidden=delete
+setlocal nobuflisted
+setlocal buftype=nofile
+setlocal nocindent
+setlocal cinkeys=0{,0},0),:,0#,!^F,o,O,e
+setlocal cinoptions=
+setlocal cinwords=if,else,while,do,for,switch
+setlocal colorcolumn=
+setlocal comments=sO:*\ -,mO:*\ \ ,exO:*/,s1:/*,mb:*,ex:*/,://
+setlocal commentstring=/*%s*/
+setlocal complete=.,w,b,u,t,i
+setlocal concealcursor=
+setlocal conceallevel=0
+setlocal completefunc=
+setlocal nocopyindent
+setlocal cryptmethod=
+setlocal nocursorbind
+setlocal nocursorcolumn
+set cursorline
+setlocal cursorline
+setlocal define=
+setlocal dictionary=
+setlocal nodiff
+setlocal equalprg=
+setlocal errorformat=
+setlocal expandtab
+if &filetype != ''
+setlocal filetype=
+endif
+setlocal foldcolumn=0
+setlocal foldenable
+setlocal foldexpr=0
+setlocal foldignore=#
+setlocal foldlevel=0
+setlocal foldmarker={{{,}}}
+setlocal foldmethod=manual
+setlocal foldminlines=1
+setlocal foldnestmax=20
+setlocal foldtext=foldtext()
+setlocal formatexpr=
+setlocal formatoptions=tcroql
+setlocal formatlistpat=^\\s*\\d\\+[\\]:.)}\\t\ ]\\s*
+setlocal grepprg=
+setlocal iminsert=2
+setlocal imsearch=2
+setlocal include=
+setlocal includeexpr=
+setlocal indentexpr=
+setlocal indentkeys=0{,0},:,0#,!^F,o,O,e
+setlocal noinfercase
+setlocal iskeyword=@,48-57,_,192-255
+setlocal keywordprg=
+setlocal nolinebreak
+setlocal nolisp
+setlocal nolist
+setlocal makeprg=
+setlocal matchpairs=(:),{:},[:]
+setlocal nomodeline
+setlocal nomodifiable
+setlocal nrformats=octal,hex
+set number
+setlocal nonumber
+setlocal numberwidth=4
+setlocal omnifunc=
+setlocal path=
+setlocal nopreserveindent
+setlocal nopreviewwindow
+setlocal quoteescape=\\
+setlocal noreadonly
+setlocal norelativenumber
+setlocal norightleft
+setlocal rightleftcmd=search
+setlocal noscrollbind
+setlocal shiftwidth=4
+setlocal noshortname
+setlocal nosmartindent
+setlocal softtabstop=0
+setlocal nospell
+setlocal spellcapcheck=[.?!]\\_[\\])'\"\	\ ]\\+
+setlocal spellfile=
+setlocal spelllang=en
+setlocal statusline=
+setlocal suffixesadd=
+setlocal noswapfile
+setlocal synmaxcol=3000
+if &syntax != ''
+setlocal syntax=
+endif
+setlocal tabstop=4
+setlocal tags=
+setlocal textwidth=0
+setlocal thesaurus=
+setlocal noundofile
+setlocal nowinfixheight
+setlocal nowinfixwidth
+setlocal wrap
+setlocal wrapmargin=0
+wincmd w
+argglobal
+edit ~/fun/AirRobotControler/lib/controlerSocket.cpp
+inoremap <buffer> <silent> ­ =EchoFuncP()
+inoremap <buffer> <silent> ½ =EchoFuncN()
+inoremap <buffer> <silent> ( (=EchoFunc()
+inoremap <buffer> <silent> ) =EchoFuncClear())
+setlocal keymap=
+setlocal noarabic
+setlocal noautoindent
+setlocal balloonexpr=
+setlocal nobinary
+setlocal bufhidden=
+setlocal buflisted
+setlocal buftype=
+setlocal cindent
+setlocal cinkeys=0{,0},0),:,0#,!^F,o,O,e
+setlocal cinoptions=
+setlocal cinwords=if,else,while,do,for,switch
+setlocal colorcolumn=
+setlocal comments=sO:*\ -,mO:*\ \ ,exO:*/,s1:/*,mb:*,ex:*/,://
+setlocal commentstring=/*%s*/
+setlocal complete=.,w,b,u,t,i
+setlocal concealcursor=
+setlocal conceallevel=0
+setlocal completefunc=ClangComplete
+setlocal nocopyindent
+setlocal cryptmethod=
+setlocal nocursorbind
+setlocal nocursorcolumn
+set cursorline
+setlocal cursorline
+setlocal define=
+setlocal dictionary=
+setlocal nodiff
+setlocal equalprg=
+setlocal errorformat=
+setlocal expandtab
+if &filetype != 'cpp'
+setlocal filetype=cpp
+endif
+setlocal foldcolumn=0
+setlocal foldenable
+setlocal foldexpr=0
+setlocal foldignore=#
+setlocal foldlevel=0
+setlocal foldmarker={{{,}}}
+setlocal foldmethod=manual
+setlocal foldminlines=1
+setlocal foldnestmax=20
+setlocal foldtext=foldtext()
+setlocal formatexpr=
+setlocal formatoptions=croql
+setlocal formatlistpat=^\\s*\\d\\+[\\]:.)}\\t\ ]\\s*
+setlocal grepprg=
+setlocal iminsert=0
+setlocal imsearch=2
+setlocal include=
+setlocal includeexpr=
+setlocal indentexpr=
+setlocal indentkeys=0{,0},:,0#,!^F,o,O,e
+setlocal noinfercase
+setlocal iskeyword=@,48-57,_,192-255
+setlocal keywordprg=
+setlocal nolinebreak
+setlocal nolisp
+setlocal nolist
+setlocal makeprg=
+setlocal matchpairs=(:),{:},[:]
+setlocal nomodeline
+setlocal modifiable
+setlocal nrformats=octal,hex
+set number
+setlocal number
+setlocal numberwidth=4
+setlocal omnifunc=ClangComplete
+setlocal path=
+setlocal nopreserveindent
+setlocal nopreviewwindow
+setlocal quoteescape=\\
+setlocal noreadonly
+setlocal norelativenumber
+setlocal norightleft
+setlocal rightleftcmd=search
+setlocal noscrollbind
+setlocal shiftwidth=4
+setlocal noshortname
+setlocal nosmartindent
+setlocal softtabstop=0
+setlocal nospell
+setlocal spellcapcheck=[.?!]\\_[\\])'\"\	\ ]\\+
+setlocal spellfile=
+setlocal spelllang=en
+setlocal statusline=
+setlocal suffixesadd=
+setlocal swapfile
+setlocal synmaxcol=3000
+if &syntax != 'cpp'
+setlocal syntax=cpp
+endif
+setlocal tabstop=4
+setlocal tags=
+setlocal textwidth=0
+setlocal thesaurus=
+setlocal noundofile
+setlocal nowinfixheight
+setlocal nowinfixwidth
+setlocal wrap
+setlocal wrapmargin=0
+silent! normal! zE
+let s:l = 13 - ((12 * winheight(0) + 15) / 30)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+13
+normal! 024l
+wincmd w
+argglobal
+enew
+setlocal keymap=
+setlocal noarabic
+setlocal noautoindent
+setlocal balloonexpr=
+setlocal nobinary
+setlocal bufhidden=wipe
+setlocal buflisted
+setlocal buftype=quickfix
+setlocal nocindent
+setlocal cinkeys=0{,0},0),:,0#,!^F,o,O,e
+setlocal cinoptions=
+setlocal cinwords=if,else,while,do,for,switch
+setlocal colorcolumn=
+setlocal comments=sO:*\ -,mO:*\ \ ,exO:*/,s1:/*,mb:*,ex:*/,://
+setlocal commentstring=/*%s*/
+setlocal complete=.,w,b,u,t,i
+setlocal concealcursor=
+setlocal conceallevel=0
+setlocal completefunc=
+setlocal nocopyindent
+setlocal cryptmethod=
+setlocal nocursorbind
+setlocal nocursorcolumn
+set cursorline
+setlocal cursorline
+setlocal define=
+setlocal dictionary=
+setlocal nodiff
+setlocal equalprg=
+setlocal errorformat=
+setlocal expandtab
+if &filetype != 'qf'
+setlocal filetype=qf
+endif
+setlocal foldcolumn=0
+setlocal foldenable
+setlocal foldexpr=0
+setlocal foldignore=#
+setlocal foldlevel=0
+setlocal foldmarker={{{,}}}
+setlocal foldmethod=manual
+setlocal foldminlines=1
+setlocal foldnestmax=20
+setlocal foldtext=foldtext()
+setlocal formatexpr=
+setlocal formatoptions=tcroql
+setlocal formatlistpat=^\\s*\\d\\+[\\]:.)}\\t\ ]\\s*
+setlocal grepprg=
+setlocal iminsert=0
+setlocal imsearch=2
+setlocal include=
+setlocal includeexpr=
+setlocal indentexpr=
+setlocal indentkeys=0{,0},:,0#,!^F,o,O,e
+setlocal noinfercase
+setlocal iskeyword=@,48-57,_,192-255
+setlocal keywordprg=
+setlocal nolinebreak
+setlocal nolisp
+setlocal nolist
+setlocal makeprg=
+setlocal matchpairs=(:),{:},[:]
+setlocal nomodeline
+setlocal nomodifiable
+setlocal nrformats=octal,hex
+set number
+setlocal number
+setlocal numberwidth=4
+setlocal omnifunc=
+setlocal path=
+setlocal nopreserveindent
+setlocal nopreviewwindow
+setlocal quoteescape=\\
+setlocal noreadonly
+setlocal norelativenumber
+setlocal norightleft
+setlocal rightleftcmd=search
+setlocal noscrollbind
+setlocal shiftwidth=4
+setlocal noshortname
+setlocal nosmartindent
+setlocal softtabstop=0
+setlocal nospell
+setlocal spellcapcheck=[.?!]\\_[\\])'\"\	\ ]\\+
+setlocal spellfile=
+setlocal spelllang=en
+setlocal statusline=%t%{exists('w:quickfix_title')?\ '\ '.w:quickfix_title\ :\ ''}
+setlocal suffixesadd=
+setlocal noswapfile
+setlocal synmaxcol=3000
+if &syntax != 'qf'
+setlocal syntax=qf
+endif
+setlocal tabstop=4
+setlocal tags=
+setlocal textwidth=0
+setlocal thesaurus=
+setlocal noundofile
+setlocal winfixheight
+setlocal nowinfixwidth
+setlocal wrap
+setlocal wrapmargin=0
+wincmd w
+3wincmd w
+exe 'vert 1resize ' . ((&columns * 24 + 54) / 109)
+exe '2resize ' . ((&lines * 2 + 23) / 46)
+exe 'vert 2resize ' . ((&columns * 84 + 54) / 109)
+exe '3resize ' . ((&lines * 30 + 23) / 46)
+exe 'vert 3resize ' . ((&columns * 84 + 54) / 109)
+exe '4resize ' . ((&lines * 10 + 23) / 46)
+exe 'vert 4resize ' . ((&columns * 84 + 54) / 109)
+tabnext 1
+if exists('s:wipebuf')
+  silent exe 'bwipe ' . s:wipebuf
+endif
+unlet! s:wipebuf
+set winheight=1 winwidth=1 shortmess=filnxtToO
+let s:sx = expand("<sfile>:p:r")."x.vim"
+if file_readable(s:sx)
+  exe "source " . fnameescape(s:sx)
+endif
+let &so = s:so_save | let &siso = s:siso_save
+doautoall SessionLoadPost
+unlet SessionLoad
+" vim: set ft=vim :
