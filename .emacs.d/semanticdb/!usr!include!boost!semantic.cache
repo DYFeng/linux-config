@@ -1,0 +1,163 @@
+;; Object boost/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "boost/"
+  :tables (list 
+   (semanticdb-table "dynamic_bitset.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("BOOST_DYNAMIC_BITSET_HPP" variable (:constant-flag t) nil [459 483])
+            ("boost/dynamic_bitset/dynamic_bitset.hpp" include nil nil [485 535]))          
+    :file "dynamic_bitset.hpp"
+    :pointmax 561
+    :fsize 560
+    :lastmodtime '(20225 54164)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("BOOST_DYNAMIC_BITSET_HPP")
+          )
+
+    )
+   (semanticdb-table "dynamic_bitset_fwd.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("BOOST_DYNAMIC_BITSET_FWD_HPP" variable (:constant-flag t) nil [461 489])
+            ("memory" include (:system-flag t) nil [491 508])
+            ("boost" type
+               (:members 
+                  ( ("dynamic_bitset" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [626 647]))                  
+                :type "namespace")
+                nil [510 650]))          
+    :file "dynamic_bitset_fwd.hpp"
+    :pointmax 676
+    :fsize 675
+    :lastmodtime '(20225 54164)
+    :unmatched-syntax '((punctuation 624 . 625) (punctuation 622 . 623) (symbol 617 . 622) (punctuation 616 . 617) (symbol 607 . 616) (punctuation 606 . 607) (punctuation 605 . 606) (symbol 602 . 605) (punctuation 600 . 601) (symbol 590 . 599) (TYPENAME 581 . 589) (punctuation 569 . 570) (LONG 565 . 569) (UNSIGNED 556 . 564) (punctuation 554 . 555) (symbol 548 . 553) (TYPENAME 539 . 547) (punctuation 538 . 539) (TEMPLATE 529 . 537))
+    :lexical-table 
+        '(("BOOST_DYNAMIC_BITSET_FWD_HPP")
+          )
+
+    )
+   (semanticdb-table "static_assert.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("BOOST_STATIC_ASSERT_HPP" variable (:constant-flag t) nil [407 430])
+            ("boost/config.hpp" include (:system-flag t) nil [432 459])
+            ("boost/detail/workaround.hpp" include (:system-flag t) nil [460 498])
+            ("BOOST_STATIC_ASSERT_MSG" variable (:constant-flag t) nil [541 564])
+            ("BOOST_SA_GCC_WORKAROUND" variable (:constant-flag t) nil [1005 1028])
+            ("BOOST_STATIC_ASSERT_BOOL_CAST" variable (:constant-flag t) nil [1222 1251])
+            ("BOOST_STATIC_ASSERT" variable (:constant-flag t) nil [1391 1410]))          
+    :file "static_assert.hpp"
+    :pointmax 5245
+    :fsize 5244
+    :lastmodtime '(20225 54164)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("BOOST_STATIC_ASSERT_MSG" (spp-arg-list ("B" "Msg") 564 . 574) . ((symbol "static_assert" 575 . 588) (semantic-list "(B, Msg)" 588 . 596)))
+          ("BOOST_STATIC_ASSERT_HPP")
+          ("BOOST_SA_GCC_WORKAROUND")
+          ("BOOST_STATIC_ASSERT" (spp-arg-list ("B") 1410 . 1415) . ((symbol "static_assert" 1416 . 1429) (semantic-list "(B, #B)" 1429 . 1436)))
+          ("BOOST_STATIC_ASSERT_BOOL_CAST" (spp-arg-list ("x") 1251 . 1256) . ((semantic-list "((x) == 0 ? false : true)" 1257 . 1282)))
+          )
+
+    )
+   (semanticdb-table "limits.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("BOOST_LIMITS" variable (:constant-flag t) nil [393 405])
+            ("boost/config.hpp" include (:system-flag t) nil [407 434])
+            ("limits" include (:system-flag t) nil [501 519])
+            ("BOOST_LLT" variable (:constant-flag t) nil [854 863])
+            ("BOOST_ULLT" variable (:constant-flag t) nil [899 909])
+            ("climits" include (:system-flag t) nil [944 962])
+            ("std" type (:type "namespace") nil [981 6102]))          
+    :file "limits.hpp"
+    :pointmax 6120
+    :fsize 6119
+    :lastmodtime '(20225 54164)
+    :unmatched-syntax '((punctuation 6099 . 6100) (semantic-list 3596 . 6099) (punctuation 3591 . 3592) (symbol "ulong_long_type" 3581 . 3591) (punctuation ":" 3581 . 3591) (punctuation ":" 3581 . 3591) (symbol "boost" 3581 . 3591) (punctuation ":" 3581 . 3591) (punctuation ":" 3581 . 3591) (punctuation 3580 . 3581) (symbol 3566 . 3580) (CLASS 3560 . 3565) (punctuation 3556 . 3557) (punctuation 3555 . 3556) (TEMPLATE 3547 . 3555) (punctuation 3542 . 3543) (semantic-list 1047 . 3542) (punctuation 1042 . 1043) (symbol "long_long_type" 1033 . 1042) (punctuation ":" 1033 . 1042) (punctuation ":" 1033 . 1042) (symbol "boost" 1033 . 1042) (punctuation ":" 1033 . 1042) (punctuation ":" 1033 . 1042) (punctuation 1032 . 1033) (symbol 1018 . 1032) (CLASS 1012 . 1017) (punctuation 1008 . 1009) (punctuation 1007 . 1008) (TEMPLATE 999 . 1007))
+    :lexical-table 
+        '(("BOOST_LIMITS")
+          ("BOOST_ULLT" . 
+              ((punctuation ":" 911 . 912) (punctuation ":" 912 . 913) (symbol "boost" 913 . 918) (punctuation ":" 918 . 919) (punctuation ":" 919 . 920) (symbol "ulong_long_type" 920 . 935)))
+          ("BOOST_LLT" . 
+              ((punctuation ":" 865 . 866) (punctuation ":" 866 . 867) (symbol "boost" 867 . 872) (punctuation ":" 872 . 873) (punctuation ":" 873 . 874) (symbol "long_long_type" 874 . 888)))
+          )
+
+    )
+   (semanticdb-table "config.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("BOOST_CONFIG_HPP" variable (:constant-flag t) nil [632 648])
+            ("BOOST_USER_CONFIG" variable (:constant-flag t) nil [792 809])
+            ("boost/config/select_compiler_config.hpp" include (:system-flag t) nil [1088 1140])
+            ("boost/config/select_stdlib_config.hpp" include (:system-flag t) nil [1430 1480])
+            ("boost/config/select_platform_config.hpp" include (:system-flag t) nil [1770 1822])
+            ("boost/config/suffix.hpp" include (:system-flag t) nil [1976 2010]))          
+    :file "config.hpp"
+    :pointmax 2051
+    :fsize 2050
+    :lastmodtime '(20225 54164)
+    :unmatched-syntax '((punctuation ">" 898 . 915) (symbol "hpp" 898 . 915) (punctuation "." 898 . 915) (symbol "user" 898 . 915) (punctuation "/" 898 . 915) (symbol "config" 898 . 915) (punctuation "/" 898 . 915) (symbol "boost" 898 . 915) (punctuation "<" 898 . 915) (symbol 890 . 897) (punctuation 887 . 888))
+    :lexical-table 
+        '(("BOOST_USER_CONFIG" . 
+              ((punctuation "<" 810 . 811) (symbol "boost" 811 . 816) (punctuation "/" 816 . 817) (symbol "config" 817 . 823) (punctuation "/" 823 . 824) (symbol "user" 824 . 828) (punctuation "." 828 . 829) (symbol "hpp" 829 . 832) (punctuation ">" 832 . 833)))
+          ("BOOST_CONFIG_HPP")
+          )
+
+    )
+   (semanticdb-table "type.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("BOOST_TYPE_DWA20010120_HPP" variable (:constant-flag t) nil [240 266])
+            ("boost" type
+               (:members 
+                  ( ("type" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [404 440]))                  
+                :type "namespace")
+                nil [268 443]))          
+    :file "type.hpp"
+    :pointmax 482
+    :fsize 481
+    :lastmodtime '(20225 54164)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("BOOST_TYPE_DWA20010120_HPP")
+          )
+
+    )
+   (semanticdb-table "non_type.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("BOOST_NON_TYPE_HPP_GP_20030417" variable (:constant-flag t) nil [372 402])
+            ("boost" type
+               (:members 
+                  ( ("non_type" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil)
+                            ("T" type nil nil nil))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [541 589]))                  
+                :type "namespace")
+                nil [405 593]))          
+    :file "non_type.hpp"
+    :pointmax 620
+    :fsize 619
+    :lastmodtime '(20225 54164)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("BOOST_NON_TYPE_HPP_GP_20030417")
+          )
+
+    )
+   )
+  :file "!usr!include!boost!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

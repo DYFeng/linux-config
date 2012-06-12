@@ -1,0 +1,42 @@
+;; Object opencv/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "opencv/"
+  :tables (list 
+   (semanticdb-table "cv.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("__OPENCV_OLD_CV_H__" variable (:constant-flag t) nil [2194 2213])
+            ("CV_DO_PRAGMA" variable (:constant-flag t) nil [2504 2516])
+            ("CV_MSG_PRAGMA" variable (:constant-flag t) nil [2542 2555])
+            ("CV_WARNING" variable (:constant-flag t) nil [2667 2677])
+            ("opencv2/core/core_c.h" include nil nil [2851 2883])
+            ("opencv2/core/core.hpp" include nil nil [2884 2916])
+            ("opencv2/imgproc/imgproc_c.h" include nil nil [2917 2955])
+            ("opencv2/imgproc/imgproc.hpp" include nil nil [2956 2994])
+            ("opencv2/video/tracking.hpp" include nil nil [2995 3032])
+            ("opencv2/features2d/features2d.hpp" include nil nil [3033 3077])
+            ("opencv2/flann/flann.hpp" include nil nil [3078 3112])
+            ("opencv2/calib3d/calib3d.hpp" include nil nil [3113 3151])
+            ("opencv2/objdetect/objdetect.hpp" include nil nil [3152 3194])
+            ("opencv2/legacy/compat.hpp" include nil nil [3195 3231])
+            ("CV_IMPL" variable (:constant-flag t) nil [3263 3270])
+            ("opencv2/core/internal.hpp" include nil nil [3325 3361]))          
+    :file "cv.h"
+    :pointmax 3414
+    :fsize 3413
+    :lastmodtime '(20370 36823)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("CV_DO_PRAGMA" (spp-arg-list ("x") 2516 . 2519) . ((symbol "_Pragma" 2520 . 2527) (semantic-list "(#x)" 2528 . 2532)))
+          ("CV_MSG_PRAGMA" (spp-arg-list ("_msg") 2555 . 2561) . ((symbol "CV_DO_PRAGMA" 2562 . 2574) (semantic-list "(message (_msg))" 2574 . 2590)))
+          ("__OPENCV_OLD_CV_H__")
+          ("CV_IMPL" . ((EXTERN "extern" 3271 . 3277) (string "\"C\"" 3278 . 3281)))
+          ("CV_WARNING" (spp-arg-list ("x") 2677 . 2680) . ((symbol "CV_MSG_PRAGMA" 2681 . 2694) (semantic-list "(\"Warning: \" #x)" 2694 . 2710)))
+          )
+
+    )
+   )
+  :file "!usr!local!include!opencv!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

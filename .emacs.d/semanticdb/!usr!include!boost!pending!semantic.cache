@@ -1,0 +1,130 @@
+;; Object pending/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "pending/"
+  :tables (list 
+   (semanticdb-table "lowest_bit.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("BOOST_LOWEST_BIT_HPP_GP_20030301" variable (:constant-flag t) nil [475 507])
+            ("assert.h" include (:system-flag t) nil [509 528])
+            ("boost/pending/integer_log2.hpp" include nil nil [529 570])
+            ("boost" type
+               (:members 
+                  ( ("lowest_bit" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "int"
+                        :arguments 
+                          ( ("x" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [637 641]))                          )
+                        (reparse-symbol namespacesubparts) [596 856]))                  
+                :type "namespace")
+                nil [573 860]))          
+    :file "lowest_bit.hpp"
+    :pointmax 887
+    :fsize 886
+    :lastmodtime '(20225 54169)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("BOOST_LOWEST_BIT_HPP_GP_20030301")
+          )
+
+    )
+   (semanticdb-table "integer_log2.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("BOOST_INTEGER_LOG2_HPP_GP_20030301" variable (:constant-flag t) nil [560 594])
+            ("assert.h" include (:system-flag t) nil [596 615])
+            ("boost/limits.hpp" include nil nil [662 689])
+            ("boost/config.hpp" include nil nil [690 717])
+            ("boost" type
+               (:members 
+                  ( ("detail" type
+                       (:members 
+                          ( ("integer_log2_impl" function
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type "int"
+                                :arguments 
+                                  ( ("x" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [807 811])
+                                    ("n" variable (:type "int") (reparse-symbol arg-sub-list) [812 818]))                                  )
+                                (reparse-symbol namespacesubparts) [761 1046])
+                            ("max_pow2_less" type
+                               (:template 
+                                  ( ("int" type nil nil nil)
+                                    ("int" type nil nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("" type
+                                       (:members 
+                                          ( ("c" variable
+                                               (:constant-flag t
+                                                :default-value (1236 1241)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [1232 1241])
+                                            ("p" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [1242 1245]))                                          
+                                        :type "enum")
+                                        (reparse-symbol classsubparts) [1225 1246])
+                                    ("BOOST_STATIC_CONSTANT" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [1276 1280])
+                                            ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1281 1288])
+                                            ("" variable (:type ("c" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1299 1302])
+                                            ("" variable (:type ("n" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1341 1343]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [1254 1344]))                                  )
+                                (reparse-symbol namespacesubparts) [1169 1350])
+                            ("max_pow2_less" type
+                               (:type "struct"
+                                :members 
+                                  ( ("BOOST_STATIC_CONSTANT" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [1426 1430])
+                                            ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1431 1438]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [1404 1442]))                                  
+                                :template-specifier (("0") ("0")))
+                                (reparse-symbol namespacesubparts) [1354 1447])
+                            ("width" type
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("BOOST_STATIC_CONSTANT" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [1847 1851])
+                                            ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1852 1859]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [1825 1894]))                                  )
+                                (reparse-symbol namespacesubparts) [1689 1907]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [739 1911])
+                    ("integer_log2" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "int"
+                        :arguments 
+                          ( ("x" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2020 2024]))                          )
+                        (reparse-symbol namespacesubparts) [1980 2221]))                  
+                :type "namespace")
+                nil [720 2226]))          
+    :file "integer_log2.hpp"
+    :pointmax 2254
+    :fsize 2253
+    :lastmodtime '(20225 54169)
+    :unmatched-syntax '((semantic-list 1860 . 1892) (punctuation 1858 . 1859) (number 1439 . 1440) (punctuation 1437 . 1438) (punctuation 1339 . 1340) (semantic-list 1303 . 1338) (punctuation 1301 . 1302) (punctuation 1287 . 1288) (punctuation 1240 . 1241) (punctuation 1240 . 1241))
+    :lexical-table 
+        '(("BOOST_INTEGER_LOG2_HPP_GP_20030301")
+          )
+
+    )
+   )
+  :file "!usr!include!boost!pending!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

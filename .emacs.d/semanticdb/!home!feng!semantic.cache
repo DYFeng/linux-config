@@ -1,0 +1,51 @@
+;; Object feng/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "feng/"
+  :tables (list 
+   (semanticdb-table "test1.html"
+    :major-mode 'html-mode
+    :tags 
+        '( (".content{width:800px; line-height: 30px;margin: 0 auto; font-size:9.0pt;font-family:宋体;}
+            .vline {
+                border-top: 1px solid;
+                height: 0px;
+                clear:both;
+                margin: 10px 0;
+            }
+            .name {
+                /*                margin: 15px 0;*/
+                text-align: center;
+                font-size: 20pt;
+            }
+            /*            div{}*/
+            .clear{clear:both;}
+            .f_c{
+                margin-right:100px;
+                width:200px;
+                float:right;
+            }
+            .f_l{float:left;}
+            .f_r{float:right;}
+            .block_l{float:left;font-weight: bold;}
+            .block_r{float:right;width:680px;}
+            .block_r .f_l,.block_r .f_c,.block_r .f_r{font-weight: bold;}" section nil nil [13 6939]))          
+    :file "test1.html"
+    :pointmax 6939
+    :fsize 9742
+    :lastmodtime '(20413 2872)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "test.cpp"
+    :major-mode 'c++-mode
+    :tags nil
+    :file "test.cpp"
+    :pointmax 118
+    :fsize 117
+    :lastmodtime '(20423 6032)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!feng!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

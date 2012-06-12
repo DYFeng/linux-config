@@ -1,0 +1,898 @@
+;; Object MultiWii_2_0/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "MultiWii_2_0/"
+  :tables (list 
+   (semanticdb-table "MultiWii_2_0.ino"
+    :major-mode 'c-mode
+    :tags 
+        '( ("config.h" include nil nil [342 361])
+            ("def.h" include nil nil [362 378])
+            ("avr/pgmspace.h" include (:system-flag t) nil [379 404])
+            ("VERSION" variable (:constant-flag t) nil [414 421])
+            ("ROLL" variable (:constant-flag t) nil [476 480])
+            ("PITCH" variable (:constant-flag t) nil [497 502])
+            ("YAW" variable (:constant-flag t) nil [518 521])
+            ("THROTTLE" variable (:constant-flag t) nil [539 547])
+            ("AUX1" variable (:constant-flag t) nil [560 564])
+            ("AUX2" variable (:constant-flag t) nil [581 585])
+            ("AUX3" variable (:constant-flag t) nil [602 606])
+            ("AUX4" variable (:constant-flag t) nil [623 627])
+            ("PIDALT" variable (:constant-flag t) nil [645 651])
+            ("PIDVEL" variable (:constant-flag t) nil [666 672])
+            ("PIDGPS" variable (:constant-flag t) nil [687 693])
+            ("PIDLEVEL" variable (:constant-flag t) nil [708 716])
+            ("PIDMAG" variable (:constant-flag t) nil [729 735])
+            ("BOXACC" variable (:constant-flag t) nil [751 757])
+            ("BOXBARO" variable (:constant-flag t) nil [774 781])
+            ("BOXMAG" variable (:constant-flag t) nil [797 803])
+            ("BOXCAMSTAB" variable (:constant-flag t) nil [820 830])
+            ("BOXCAMTRIG" variable (:constant-flag t) nil [843 853])
+            ("BOXARM" variable (:constant-flag t) nil [866 872])
+            ("BOXGPSHOME" variable (:constant-flag t) nil [889 899])
+            ("BOXGPSHOLD" variable (:constant-flag t) nil [912 922])
+            ("BOXPASSTHRU" variable (:constant-flag t) nil [935 946])
+            ("BOXHEADFREE" variable (:constant-flag t) nil [958 969])
+            ("BOXBEEPERON" variable (:constant-flag t) nil [981 992])
+            ("CHECKBOXITEMS" variable (:constant-flag t) nil [1006 1019])
+            ("PIDITEMS" variable (:constant-flag t) nil [1031 1039])
+            ("currentTime" variable
+               (:typemodifiers ("static")
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [1043 1075])
+            ("previousTime" variable
+               (:typemodifiers ("static")
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [1076 1109])
+            ("cycleTime" variable
+               (:typemodifiers ("static")
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [1110 1140])
+            ("calibratingA" variable
+               (:typemodifiers ("static")
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [1272 1305])
+            ("calibratingM" variable
+               (:typemodifiers ("static")
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [1431 1464])
+            ("calibratingG" variable
+               (:typemodifiers ("static")
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [1465 1494])
+            ("armed" variable
+               (:typemodifiers ("static")
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [1495 1521])
+            ("acc_1G" variable
+               (:typemodifiers ("static")
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [1522 1545])
+            ("acc_25deg" variable
+               (:typemodifiers ("static")
+                :type ("int16_t" type (:type "class") nil nil))
+                nil [1598 1624])
+            ("nunchuk" variable
+               (:typemodifiers ("static")
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [1625 1653])
+            ("accMode" variable
+               (:typemodifiers ("static")
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [1654 1682])
+            ("magMode" variable
+               (:typemodifiers ("static")
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [1722 1750])
+            ("baroMode" variable
+               (:typemodifiers ("static")
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [1800 1829])
+            ("GPSModeHome" variable
+               (:typemodifiers ("static")
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [1869 1901])
+            ("GPSModeHold" variable
+               (:typemodifiers ("static")
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [1932 1964])
+            ("headFreeMode" variable
+               (:typemodifiers ("static")
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [1994 2027])
+            ("passThruMode" variable
+               (:typemodifiers ("static")
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [2066 2099])
+            ("headFreeModeHold" variable
+               (:typemodifiers ("static")
+                :type ("int16_t" type (:type "class") nil nil))
+                nil [2138 2171])
+            ("magADC" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type ("int16_t" type (:type "class") nil nil))
+                nil [2172 2232])
+            ("accSmooth" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type ("int16_t" type (:type "class") nil nil))
+                nil [2172 2232])
+            ("accADC" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type ("int16_t" type (:type "class") nil nil))
+                nil [2172 2232])
+            ("gyroADC" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type ("int16_t" type (:type "class") nil nil))
+                nil [2172 2232])
+            ("accTrim" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type ("int16_t" type (:type "class") nil nil))
+                nil [2233 2269])
+            ("magHold" variable
+               (:typemodifiers ("static")
+                :type ("int16_t" type (:type "class") nil nil))
+                nil [2270 2302])
+            ("heading" variable
+               (:typemodifiers ("static")
+                :type ("int16_t" type (:type "class") nil nil))
+                nil [2270 2302])
+            ("calibratedACC" variable
+               (:typemodifiers ("static")
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [2303 2337])
+            ("vbat" variable
+               (:typemodifiers ("static")
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [2338 2359])
+            ("okToArm" variable
+               (:typemodifiers ("static")
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [2407 2435])
+            ("rcOptions" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [2436 2477])
+            ("BaroAlt" variable
+               (:typemodifiers ("static")
+                :type ("int32_t" type (:type "class") nil nil))
+                nil [2478 2502])
+            ("EstAlt" variable
+               (:typemodifiers ("static")
+                :type ("int32_t" type (:type "class") nil nil))
+                nil [2503 2526])
+            ("BaroPID" variable
+               (:typemodifiers ("static")
+                :type ("int16_t" type (:type "class") nil nil))
+                nil [2548 2576])
+            ("AltHold" variable
+               (:typemodifiers ("static")
+                :type ("int32_t" type (:type "class") nil nil))
+                nil [2577 2601])
+            ("errorAltitudeI" variable
+               (:typemodifiers ("static")
+                :type ("int16_t" type (:type "class") nil nil))
+                nil [2602 2637])
+            ("buzzerState" variable
+               (:typemodifiers ("static")
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [2638 2670])
+            ("debug4" variable
+               (:typemodifiers ("static")
+                :type ("int16_t" type (:type "class") nil nil))
+                nil [2671 2715])
+            ("debug3" variable
+               (:typemodifiers ("static")
+                :type ("int16_t" type (:type "class") nil nil))
+                nil [2671 2715])
+            ("debug2" variable
+               (:typemodifiers ("static")
+                :type ("int16_t" type (:type "class") nil nil))
+                nil [2671 2715])
+            ("debug1" variable
+               (:typemodifiers ("static")
+                :type ("int16_t" type (:type "class") nil nil))
+                nil [2671 2715])
+            ("cycleTimeMax" variable
+               (:typemodifiers ("static")
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [2729 2762])
+            ("cycleTimeMin" variable
+               (:typemodifiers ("static")
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [2797 2834])
+            ("powerMax" variable
+               (:typemodifiers ("static")
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [2864 2893])
+            ("i2c_errors_count" variable
+               (:typemodifiers ("static")
+                :type ("int16_t" type (:type "class") nil nil))
+                nil [2929 2966])
+            ("annex650_overrun_count" variable
+               (:typemodifiers ("static")
+                :type ("int16_t" type (:type "class") nil nil))
+                nil [2967 3010])
+            ("InflightcalibratingA" variable
+               (:typemodifiers ("static")
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [3099 3140])
+            ("AccInflightCalibrationArmed" variable
+               (:typemodifiers ("static")
+                :type ("int16_t" type (:type "class") nil nil))
+                nil [3141 3184])
+            ("AccInflightCalibrationMeasurementDone" variable
+               (:typemodifiers ("static")
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [3185 3243])
+            ("AccInflightCalibrationSavetoEEProm" variable
+               (:typemodifiers ("static")
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [3244 3299])
+            ("AccInflightCalibrationActive" variable
+               (:typemodifiers ("static")
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [3300 3349])
+            ("PMOTOR_SUM" variable (:constant-flag t) nil [3426 3436])
+            ("pMeter" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [3490 3529])
+            ("pMeterV" variable
+               (:typemodifiers ("static")
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [3582 3605])
+            ("pAlarm" variable
+               (:typemodifiers ("static")
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [3688 3711])
+            ("powerTrigger1" variable
+               (:typemodifiers ("static")
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [3833 3866])
+            ("powerValue" variable
+               (:typemodifiers ("static")
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [3922 3953])
+            ("intPowerTrigger1" variable
+               (:typemodifiers ("static")
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [3985 4036])
+            ("intPowerMeterSum" variable
+               (:typemodifiers ("static")
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [3985 4036])
+            ("telemetry" variable
+               (:typemodifiers ("static")
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [4103 4132])
+            ("telemetry_auto" variable
+               (:typemodifiers ("static")
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [4133 4167])
+            ("MINCHECK" variable (:constant-flag t) nil [4237 4245])
+            ("MAXCHECK" variable (:constant-flag t) nil [4259 4267])
+            ("failsafeCnt" variable
+               (:typemodifiers ("volatile")
+                :type ("int16_t" type (:type "class") nil nil))
+                nil [4274 4307])
+            ("failsafeEvents" variable
+               (:typemodifiers ("static")
+                :type ("int16_t" type (:type "class") nil nil))
+                nil [4308 4342])
+            ("rcData" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type ("int16_t" type (:type "class") nil nil))
+                nil [4343 4368])
+            ("rcCommand" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type ("int16_t" type (:type "class") nil nil))
+                nil [4396 4424])
+            ("rcRate8" variable
+               (:typemodifiers ("static")
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [4498 4521])
+            ("rcExpo8" variable
+               (:typemodifiers ("static")
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [4522 4545])
+            ("lookupRX" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type ("int16_t" type (:type "class") nil nil))
+                nil [4546 4573])
+            ("rcFrameComplete" variable
+               (:typemodifiers ("volatile")
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [4610 4643])
+            ("gyroData" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type ("int16_t" type (:type "class") nil nil))
+                nil [4732 4769])
+            ("gyroZero" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type ("int16_t" type (:type "class") nil nil))
+                nil [4770 4807])
+            ("accZero" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type ("int16_t" type (:type "class") nil nil))
+                nil [4808 4845])
+            ("magZero" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type ("int16_t" type (:type "class") nil nil))
+                nil [4846 4883])
+            ("angle" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type ("int16_t" type (:type "class") nil nil))
+                nil [4884 4919])
+            ("smallAngle25" variable
+               (:typemodifiers ("static")
+                :type ("int8_t" type (:type "class") nil nil))
+                nil [4995 5027])
+            ("axisPID" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type ("int16_t" type (:type "class") nil nil))
+                nil [5116 5142])
+            ("motor" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type ("int16_t" type (:type "class") nil nil))
+                nil [5143 5167])
+            ("servo" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type ("int16_t" type (:type "class") nil nil))
+                nil [5168 5236])
+            ("wing_left_mid" variable
+               (:typemodifiers ("static")
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [5237 5284])
+            ("wing_right_mid" variable
+               (:typemodifiers ("static")
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [5286 5334])
+            ("tri_yaw_middle" variable
+               (:typemodifiers ("static")
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [5336 5384])
+            ("D8" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [5465 5500])
+            ("I8" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [5465 5500])
+            ("P8" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [5465 5500])
+            ("dynD8" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [5555 5599])
+            ("dynI8" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [5555 5599])
+            ("dynP8" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [5555 5599])
+            ("rollPitchRate" variable
+               (:typemodifiers ("static")
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [5600 5629])
+            ("yawRate" variable
+               (:typemodifiers ("static")
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [5630 5653])
+            ("dynThrPID" variable
+               (:typemodifiers ("static")
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [5654 5679])
+            ("activate1" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [5680 5720])
+            ("activate2" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [5721 5761])
+            ("GPS_longitude" variable
+               (:typemodifiers ("static")
+                :type ("int32_t" type (:type "class") nil nil))
+                nil [5822 5865])
+            ("GPS_latitude" variable
+               (:typemodifiers ("static")
+                :type ("int32_t" type (:type "class") nil nil))
+                nil [5822 5865])
+            ("GPS_longitude_home" variable
+               (:typemodifiers ("static")
+                :type ("int32_t" type (:type "class") nil nil))
+                nil [5866 5919])
+            ("GPS_latitude_home" variable
+               (:typemodifiers ("static")
+                :type ("int32_t" type (:type "class") nil nil))
+                nil [5866 5919])
+            ("GPS_longitude_hold" variable
+               (:typemodifiers ("static")
+                :type ("int32_t" type (:type "class") nil nil))
+                nil [5920 5973])
+            ("GPS_latitude_hold" variable
+               (:typemodifiers ("static")
+                :type ("int32_t" type (:type "class") nil nil))
+                nil [5920 5973])
+            ("GPS_fix_home" variable
+               (:typemodifiers ("static")
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [5974 6017])
+            ("GPS_fix" variable
+               (:typemodifiers ("static")
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [5974 6017])
+            ("GPS_numSat" variable
+               (:typemodifiers ("static")
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [6018 6045])
+            ("GPS_distanceToHold" variable
+               (:typemodifiers ("static")
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [6046 6100])
+            ("GPS_distanceToHome" variable
+               (:typemodifiers ("static")
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [6046 6100])
+            ("GPS_directionToHold" variable
+               (:typemodifiers ("static")
+                :type ("int16_t" type (:type "class") nil nil))
+                nil [6151 6207])
+            ("GPS_directionToHome" variable
+               (:typemodifiers ("static")
+                :type ("int16_t" type (:type "class") nil nil))
+                nil [6151 6207])
+            ("GPS_speed" variable
+               (:typemodifiers ("static")
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [6257 6296])
+            ("GPS_altitude" variable
+               (:typemodifiers ("static")
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [6257 6296])
+            ("GPS_update" variable
+               (:typemodifiers ("static")
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [6373 6404])
+            ("GPS_angle" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type ("int16_t" type (:type "class") nil nil))
+                nil [6492 6521])
+            ("blinkLED" function
+               (:arguments 
+                  ( ("num" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6627 6639])
+                    ("wait" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6640 6653])
+                    ("repeat" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6653 6668]))                  
+                :type "void")
+                nil [6613 6867])
+            ("annexCode" function (:type "void") nil [6869 12657])
+            ("setup" function (:type "void") nil [12660 13575])
+            ("loop" function (:type "void") nil [13609 27015]))          
+    :file "MultiWii_2_0.ino"
+    :pointmax 27017
+    :fsize 27016
+    :lastmodtime '(20334 50412)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("BOXGPSHOME" . ((number "6" 902 . 903)))
+          ("VERSION" . ((number "20" 423 . 425)))
+          ("ROLL" . ((number "0" 487 . 488)))
+          ("PIDLEVEL" . ((number "6" 719 . 720)))
+          ("BOXMAG" . ((number "2" 810 . 811)))
+          ("PIDGPS" . ((number "5" 698 . 699)))
+          ("BOXPASSTHRU" . ((number "8" 948 . 949)))
+          ("BOXHEADFREE" . ((number "9" 971 . 972)))
+          ("THROTTLE" . ((number "3" 550 . 551)))
+          ("PIDALT" . ((number "3" 656 . 657)))
+          ("BOXBARO" . ((number "1" 787 . 788)))
+          ("BOXGPSHOLD" . ((number "7" 925 . 926)))
+          ("MAXCHECK" . ((number "1900" 4268 . 4272)))
+          ("AUX1" . ((number "4" 571 . 572)))
+          ("PIDITEMS" . ((number "8" 1040 . 1041)))
+          ("AUX2" . ((number "5" 592 . 593)))
+          ("PITCH" . ((number "1" 508 . 509)))
+          ("AUX3" . ((number "6" 613 . 614)))
+          ("PIDMAG" . ((number "7" 740 . 741)))
+          ("MINCHECK" . ((number "1100" 4246 . 4250)))
+          ("AUX4" . ((number "7" 634 . 635)))
+          ("CHECKBOXITEMS" . ((number "11" 1020 . 1022)))
+          ("PMOTOR_SUM" . ((number "8" 3437 . 3438)))
+          ("PIDVEL" . ((number "4" 677 . 678)))
+          ("BOXCAMTRIG" . ((number "4" 856 . 857)))
+          ("BOXBEEPERON" . ((number "10" 994 . 996)))
+          ("YAW" . ((number "2" 529 . 530)))
+          ("BOXCAMSTAB" . ((number "3" 833 . 834)))
+          ("BOXACC" . ((number "0" 764 . 765)))
+          ("BOXARM" . ((number "5" 879 . 880)))
+          )
+
+    )
+   (semanticdb-table "config.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("MINTHROTTLE" variable (:constant-flag t) nil [606 617])
+            ("HEX6" variable (:constant-flag t) nil [765 769])
+            ("YAW_DIRECTION" variable (:constant-flag t) nil [891 904])
+            ("I2C_SPEED" variable (:constant-flag t) nil [1094 1103])
+            ("INTERNAL_I2C_PULLUPS" variable (:constant-flag t) nil [1209 1229])
+            ("TRUSTED_ACCZ" variable (:constant-flag t) nil [1595 1607])
+            ("A0_A1_PIN_HEX" variable (:constant-flag t) nil [1904 1917])
+            ("GPS_BAUD" variable (:constant-flag t) nil [2666 2674])
+            ("INTERLEAVING_DELAY" variable (:constant-flag t) nil [3694 3712])
+            ("NEUTRALIZE_DELAY" variable (:constant-flag t) nil [3894 3910])
+            ("FREEIMUv035_BMP" variable (:constant-flag t) nil [4906 4921])
+            ("FAILSAFE" variable (:constant-flag t) nil [14149 14157])
+            ("FAILSAVE_DELAY" variable (:constant-flag t) nil [14274 14288])
+            ("FAILSAVE_OFF_DELAY" variable (:constant-flag t) nil [14415 14433])
+            ("FAILSAVE_THR0TTLE" variable (:constant-flag t) nil [14550 14567])
+            ("MINCOMMAND" variable (:constant-flag t) nil [15166 15176])
+            ("MAXTHROTTLE" variable (:constant-flag t) nil [15292 15303])
+            ("SERIAL_COM_SPEED" variable (:constant-flag t) nil [15421 15437])
+            ("LCD_CONF" variable (:constant-flag t) nil [15817 15825])
+            ("LCD_SERIAL3W" variable (:constant-flag t) nil [16116 16128])
+            ("LCD_MENU_PREV" variable (:constant-flag t) nil [16861 16874])
+            ("LCD_MENU_NEXT" variable (:constant-flag t) nil [16887 16900])
+            ("LCD_VALUE_UP" variable (:constant-flag t) nil [16913 16925])
+            ("LCD_VALUE_DOWN" variable (:constant-flag t) nil [16938 16952])
+            ("VBATREF" variable (:constant-flag t) nil [19580 19587])
+            ("MOTOR_STOP" variable (:constant-flag t) nil [19948 19958])
+            ("MIDRC" variable (:constant-flag t) nil [20049 20054])
+            ("TILT_PITCH_MIN" variable (:constant-flag t) nil [20213 20227])
+            ("TILT_PITCH_MAX" variable (:constant-flag t) nil [20291 20305])
+            ("TILT_PITCH_MIDDLE" variable (:constant-flag t) nil [20360 20377])
+            ("TILT_PITCH_PROP" variable (:constant-flag t) nil [20416 20431])
+            ("TILT_ROLL_MIN" variable (:constant-flag t) nil [20524 20537])
+            ("TILT_ROLL_MAX" variable (:constant-flag t) nil [20555 20568])
+            ("TILT_ROLL_MIDDLE" variable (:constant-flag t) nil [20586 20602])
+            ("TILT_ROLL_PROP" variable (:constant-flag t) nil [20617 20631])
+            ("CAM_SERVO_HIGH" variable (:constant-flag t) nil [20777 20791])
+            ("CAM_SERVO_LOW" variable (:constant-flag t) nil [20842 20855])
+            ("CAM_TIME_HIGH" variable (:constant-flag t) nil [20906 20919])
+            ("CAM_TIME_LOW" variable (:constant-flag t) nil [20987 20999])
+            ("TRI_YAW_CONSTRAINT_MIN" variable (:constant-flag t) nil [21121 21143])
+            ("TRI_YAW_CONSTRAINT_MAX" variable (:constant-flag t) nil [21157 21179])
+            ("TRI_YAW_MIDDLE" variable (:constant-flag t) nil [21193 21207])
+            ("PITCH_DIRECTION_L" variable (:constant-flag t) nil [21540 21557])
+            ("PITCH_DIRECTION_R" variable (:constant-flag t) nil [21602 21619])
+            ("ROLL_DIRECTION_L" variable (:constant-flag t) nil [21751 21767])
+            ("ROLL_DIRECTION_R" variable (:constant-flag t) nil [21811 21827])
+            ("WING_LEFT_MID" variable (:constant-flag t) nil [21953 21966])
+            ("WING_RIGHT_MID" variable (:constant-flag t) nil [22064 22078])
+            ("WING_LEFT_MIN" variable (:constant-flag t) nil [22176 22189])
+            ("WING_LEFT_MAX" variable (:constant-flag t) nil [22259 22272])
+            ("WING_RIGHT_MIN" variable (:constant-flag t) nil [22342 22356])
+            ("WING_RIGHT_MAX" variable (:constant-flag t) nil [22425 22439])
+            ("PLEVELSCALE" variable (:constant-flag t) nil [25054 25065])
+            ("PLEVELDIV" variable (:constant-flag t) nil [25265 25274])
+            ("PLEVELDIVSOFT" variable (:constant-flag t) nil [25369 25382])
+            ("PSENSORNULL" variable (:constant-flag t) nil [25815 25826])
+            ("PINT2mA" variable (:constant-flag t) nil [25900 25907])
+            ("VBAT" variable (:constant-flag t) nil [26402 26406])
+            ("VBATSCALE" variable (:constant-flag t) nil [26475 26484])
+            ("VBATLEVEL1_3S" variable (:constant-flag t) nil [26579 26592])
+            ("VBATLEVEL2_3S" variable (:constant-flag t) nil [26614 26627])
+            ("VBATLEVEL3_3S" variable (:constant-flag t) nil [26649 26662])
+            ("NO_VBAT" variable (:constant-flag t) nil [26683 26690])
+            ("LCD_TELEMETRY_FREQ" variable (:constant-flag t) nil [28441 28459])
+            ("LCD_TELEMETRY_AUTO_FREQ" variable (:constant-flag t) nil [28582 28605])
+            ("PSENSORFREQ" variable (:constant-flag t) nil [28663 28674])
+            ("VBATFREQ" variable (:constant-flag t) nil [28748 28756]))          
+    :file "config.h"
+    :pointmax 29167
+    :fsize 29166
+    :lastmodtime '(20360 9881)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("FAILSAFE")
+          ("TILT_PITCH_MIN" . ((number "1020" 20231 . 20235)))
+          ("PITCH_DIRECTION_R" . ((punctuation "-" 21620 . 21621) (number "1" 21621 . 21622)))
+          ("WING_LEFT_MID" . ((number "1500" 21968 . 21972)))
+          ("VBATSCALE" . ((number "131" 26489 . 26492)))
+          ("NEUTRALIZE_DELAY" . ((number "100000" 3911 . 3917)))
+          ("TILT_ROLL_PROP" . ((number "10" 20635 . 20637)))
+          ("WING_RIGHT_MID" . ((number "1500" 22079 . 22083)))
+          ("LCD_TELEMETRY_AUTO_FREQ" . ((number "667" 28606 . 28609)))
+          ("FAILSAVE_DELAY" . ((number "10" 14293 . 14295)))
+          ("FAILSAVE_OFF_DELAY" . ((number "200" 14434 . 14437)))
+          ("LCD_SERIAL3W")
+          ("LCD_MENU_NEXT" . ((string "'c'" 16901 . 16904)))
+          ("TILT_PITCH_MIDDLE" . ((number "1500" 20378 . 20382)))
+          ("ROLL_DIRECTION_R" . ((number "1" 21828 . 21829)))
+          ("LCD_CONF")
+          ("LCD_VALUE_DOWN" . ((string "'b'" 16953 . 16956)))
+          ("TRI_YAW_MIDDLE" . ((number "1500" 21208 . 21212)))
+          ("VBATLEVEL2_3S" . ((number "103" 26628 . 26631)))
+          ("YAW_DIRECTION" . ((number "1" 905 . 906)))
+          ("MINCOMMAND" . ((number "1000" 15177 . 15181)))
+          ("MAXTHROTTLE" . ((number "1850" 15304 . 15308)))
+          ("LCD_VALUE_UP" . ((string "'d'" 16926 . 16929)))
+          ("MIDRC" . ((number "1500" 20055 . 20059)))
+          ("TILT_ROLL_MIDDLE" . ((number "1500" 20604 . 20608)))
+          ("NO_VBAT" . ((number "16" 26697 . 26699)))
+          ("INTERNAL_I2C_PULLUPS")
+          ("GPS_BAUD" . ((number "115200" 2677 . 2683)))
+          ("INTERLEAVING_DELAY" . ((number "3000" 3713 . 3717)))
+          ("LCD_MENU_PREV" . ((string "'a'" 16875 . 16878)))
+          ("CAM_SERVO_LOW" . ((number "1020" 20856 . 20860)))
+          ("CAM_TIME_LOW" . ((number "1000" 21000 . 21004)))
+          ("PLEVELSCALE" . ((number "50" 25066 . 25068)))
+          ("PLEVELDIVSOFT" . ((symbol "PLEVELDIV" 25383 . 25392)))
+          ("VBAT")
+          ("CAM_TIME_HIGH" . ((number "1000" 20920 . 20924)))
+          ("PITCH_DIRECTION_L" . ((number "1" 21558 . 21559)))
+          ("MINTHROTTLE" . ((number "1150" 618 . 622)))
+          ("FAILSAVE_THR0TTLE" . ((semantic-list "(MINTHROTTLE + 200)" 14569 . 14588)))
+          ("WING_LEFT_MAX" . ((number "2000" 22274 . 22278)))
+          ("HEX6")
+          ("TRUSTED_ACCZ")
+          ("TILT_ROLL_MAX" . ((number "2000" 20573 . 20577)))
+          ("TRI_YAW_CONSTRAINT_MAX" . ((number "2000" 21180 . 21184)))
+          ("WING_RIGHT_MAX" . ((number "2000" 22440 . 22444)))
+          ("PSENSORNULL" . ((number "510" 25827 . 25830)))
+          ("PINT2mA" . ((number "13" 25908 . 25910)))
+          ("VBATLEVEL3_3S" . ((number "99" 26663 . 26665)))
+          ("I2C_SPEED" . ((number "400000L" 1104 . 1111)))
+          ("A0_A1_PIN_HEX")
+          ("FREEIMUv035_BMP")
+          ("SERIAL_COM_SPEED" . ((number "115200" 15438 . 15444)))
+          ("TILT_PITCH_PROP" . ((number "10" 20434 . 20436)))
+          ("ROLL_DIRECTION_L" . ((number "1" 21768 . 21769)))
+          ("WING_LEFT_MIN" . ((number "1020" 22191 . 22195)))
+          ("LCD_TELEMETRY_FREQ" . ((number "23" 28460 . 28462)))
+          ("VBATFREQ" . ((symbol "PSENSORFREQ" 28757 . 28768)))
+          ("VBATREF" . ((number "24" 19588 . 19590)))
+          ("TILT_PITCH_MAX" . ((number "2000" 20309 . 20313)))
+          ("TILT_ROLL_MIN" . ((number "1020" 20542 . 20546)))
+          ("TRI_YAW_CONSTRAINT_MIN" . ((number "1020" 21144 . 21148)))
+          ("WING_RIGHT_MIN" . ((number "1020" 22357 . 22361)))
+          ("MOTOR_STOP")
+          ("CAM_SERVO_HIGH" . ((number "2000" 20792 . 20796)))
+          ("PLEVELDIV" . ((number "5000" 25275 . 25279)))
+          ("VBATLEVEL1_3S" . ((number "107" 26593 . 26596)))
+          ("PSENSORFREQ" . ((number "6" 28675 . 28676)))
+          )
+
+    )
+   (semanticdb-table "def.h"
+    :file "def.h"
+    :fsize 34114
+    :lastmodtime '(20334 50412)
+    )
+   (semanticdb-table "Output.ino"
+    :major-mode 'c-mode
+    :tags 
+        '( ("PWM_PIN" variable
+               (:dereference 1
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [24 67])
+            ("atomicServo" variable
+               (:dereference 1
+                :typemodifiers ("volatile")
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [554 622])
+            ("atomicPWM_PIN5_lowState" variable
+               (:typemodifiers ("volatile")
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [672 713])
+            ("atomicPWM_PIN5_highState" variable
+               (:typemodifiers ("volatile")
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [716 758])
+            ("atomicPWM_PIN6_lowState" variable
+               (:typemodifiers ("volatile")
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [761 802])
+            ("atomicPWM_PIN6_highState" variable
+               (:typemodifiers ("volatile")
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [805 847])
+            ("atomicPWM_PINA2_lowState" variable
+               (:typemodifiers ("volatile")
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [874 916])
+            ("atomicPWM_PINA2_highState" variable
+               (:typemodifiers ("volatile")
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [919 962])
+            ("atomicPWM_PIN12_lowState" variable
+               (:typemodifiers ("volatile")
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [965 1007])
+            ("atomicPWM_PIN12_highState" variable
+               (:typemodifiers ("volatile")
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [1010 1053])
+            ("writeServos" function (:type "void") nil [1588 3405])
+            ("writeMotors" function (:type "void") nil [3407 4709])
+            ("i" variable (:type ("uint8_t" type (:type "class") nil nil)) nil [8654 8667])
+            ("NUMBER_MOTOR" variable (:type "int") nil [8669 8682])
+            ("mc" variable (:type "int") nil [8700 8703])
+            ("i" variable (:type ("uint8_t" type (:type "class") nil nil)) nil [8750 8762])
+            ("NUMBER_MOTOR" variable (:type "int") nil [8764 8777])
+            ("SOFT_PWM_ISR1" variable (:constant-flag t) nil [18610 18623])
+            ("SOFT_PWM_ISR2" variable (:constant-flag t) nil [18654 18667])
+            ("SOFT_PWM_CHANNEL1" variable (:constant-flag t) nil [18698 18715])
+            ("SOFT_PWM_CHANNEL2" variable (:constant-flag t) nil [18734 18751])
+            ("TCCR0A" variable (:type "int") nil [19021 19032])
+            ("state" variable
+               (:typemodifiers ("static")
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [19573 19598])
+            ("SOFT_PWM_1_PIN_HIGH" variable (:type "int") nil [19683 19703])
+            ("atomicPWM_PIN5_highState" variable (:type "int") nil [19787 19812])
+            ("state" variable (:type "int") nil [19819 19829])
+            ("SOFT_PWM_2_PIN_LOW" variable (:type "int") nil [19920 19939])
+            ("atomicPWM_PIN6_lowState" variable (:type "int") nil [20018 20042])
+            ("state" variable (:type "int") nil [20049 20059])
+            ("SOFT_PWM_2_PIN_HIGH" variable (:type "int") nil [20149 20169])
+            ("atomicPWM_PIN6_highState" variable (:type "int") nil [20253 20278])
+            ("state" variable (:type "int") nil [20285 20295])
+            ("SOFT_PWM_1_PIN_LOW" variable (:type "int") nil [20388 20407])
+            ("atomicPWM_PIN5_lowState" variable (:type "int") nil [20487 20511])
+            ("state" variable (:type "int") nil [20518 20528])
+            ("state" variable
+               (:typemodifiers ("static")
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [20680 20705])
+            ("SOFT_PWM_3_PIN_HIGH" variable (:type "int") nil [20736 20756])
+            ("atomicPWM_PINA2_highState" variable (:type "int") nil [20786 20812])
+            ("state" variable (:type "int") nil [20821 20831])
+            ("SOFT_PWM_4_PIN_LOW" variable (:type "int") nil [20868 20887])
+            ("atomicPWM_PIN12_lowState" variable (:type "int") nil [20917 20942])
+            ("state" variable (:type "int") nil [20951 20961])
+            ("SOFT_PWM_4_PIN_HIGH" variable (:type "int") nil [20998 21018])
+            ("atomicPWM_PIN12_highState" variable (:type "int") nil [21048 21074])
+            ("state" variable (:type "int") nil [21083 21093])
+            ("SOFT_PWM_3_PIN_LOW" variable (:type "int") nil [21132 21151])
+            ("atomicPWM_PINA2_lowState" variable (:type "int") nil [21181 21206])
+            ("state" variable (:type "int") nil [21215 21225])
+            ("maxMotor" variable (:type ("int16_t" type (:type "class") nil nil)) nil [21280 21297])
+            ("i" variable (:type ("uint8_t" type (:type "class") nil nil)) nil [21300 21310])
+            ("PIDMIX" variable (:constant-flag t) nil [21322 21328])
+            ("i" variable (:type "int") nil [27536 27540])
+            ("NUMBER_MOTOR" variable (:type "int") nil [27543 27556])
+            ("i" variable (:type "int") nil [27614 27620])
+            ("NUMBER_MOTOR" variable (:type "int") nil [27625 27638])
+            ("MAXTHROTTLE" variable (:type "int") nil [27799 27811])
+            ("motor" variable
+               (:dereference 1
+                :type "int")
+                nil [27816 27873])
+            ("motor" variable
+               (:dereference 1
+                :type "int")
+                nil [27950 27973])
+            ("motor" variable
+               (:dereference 1
+                :type "int")
+                nil [28056 28078])
+            ("amp" variable (:type ("uint32_t" type (:type "class") nil nil)) nil [28140 28153]))          
+    :file "Output.ino"
+    :pointmax 29485
+    :fsize 29484
+    :lastmodtime '(20334 50412)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "Serial.ino"
+    :major-mode 'c-mode
+    :tags 
+        '( ("old_time" variable (:type "unsigned long") nil [482 514])
+            ("cur_time" variable (:type "unsigned long") nil [482 514])
+            ("get_pulse" function
+               (:arguments 
+                  ( ("a" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [534 544])
+                    ("b" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [544 554]))                  
+                :type ("int16_t" type (:type "class") nil nil))
+                nil [516 579])
+            ("check_valid" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [602 616]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [582 833])
+            ("serialCom" function (:type "void") nil [838 8190])
+            ("tailTX" variable
+               (:typemodifiers ("static")
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [8369 8398])
+            ("headTX" variable
+               (:typemodifiers ("static")
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [8369 8398])
+            ("bufTX" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [8399 8425])
+            ("serialize16" function
+               (:arguments 
+                  ( ("a" variable (:type ("int16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8512 8522]))                  
+                :type "void")
+                nil [8495 8730])
+            ("serialize8" function
+               (:arguments 
+                  ( ("a" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8747 8757]))                  
+                :type "void")
+                nil [8731 8847])
+            ("UartSendData" function (:type "void") nil [9140 9404])
+            ("SerialOpen" function
+               (:arguments 
+                  ( ("port" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9423 9436])
+                    ("baud" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9437 9451]))                  
+                :type "void")
+                nil [9407 10131])
+            ("SerialEnd" function
+               (:arguments 
+                  ( ("port" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10148 10161]))                  
+                :type "void")
+                nil [10133 10593])
+            ("ISR" function
+               (:arguments 
+                  ( ("" variable (:type ("USART_RX_vect" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10644 10658]))                  
+                :type "int")
+                nil [10640 10807])
+            ("ISR" function
+               (:arguments 
+                  ( ("" variable (:type ("USART1_RX_vect" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11081 11096]))                  
+                :type "int")
+                nil [11077 11253])
+            ("SerialRead" function
+               (:arguments 
+                  ( ("port" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11653 11666]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [11634 12430])
+            ("SerialAvailable" function
+               (:arguments 
+                  ( ("port" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12456 12469]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [12432 12951])
+            ("SerialWrite" function
+               (:arguments 
+                  ( ("port" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12970 12983])
+                    ("c" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12983 12993]))                  
+                :type "void")
+                nil [12953 13491]))          
+    :file "Serial.ino"
+    :pointmax 13493
+    :fsize 13492
+    :lastmodtime '(20360 10415)
+    :unmatched-syntax '((semantic-list 8883 . 9131) (symbol 8874 . 8882) (punctuation 833 . 834) (punctuation 579 . 580))
+    )
+   )
+  :file "!media!DOCUMENT!C++!MWC!MultiWii_2_0!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

@@ -1,0 +1,1259 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables (list 
+   (semanticdb-table "filter.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("filter.h" include nil nil [1 20])
+            ("filter_load" function
+               (:pointer 1
+                :arguments 
+                  ( ("filter_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [42 60]))                  
+                :type ("filter" type (:type "class") nil nil))
+                nil [22 1557])
+            ("filter_param_free" function
+               (:arguments 
+                  ( ("param" variable
+                       (:pointer 1
+                        :type ("filter_param" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1582 1602]))                  
+                :type "void")
+                nil [1559 1773])
+            ("filter_free" function
+               (:arguments 
+                  ( ("f" variable
+                       (:pointer 1
+                        :type ("filter" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1792 1802]))                  
+                :type "void")
+                nil [1775 2002])
+            ("filter_print" function
+               (:arguments 
+                  ( ("f" variable
+                       (:pointer 1
+                        :type ("filter" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2022 2032]))                  
+                :type "void")
+                nil [2004 2896])
+            ("filter_load_param_from_node" function
+               (:arguments 
+                  ( ("node" variable
+                       (:pointer 1
+                        :type ("xmlNode" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2931 2945])
+                    ("param_list" variable
+                       (:pointer 1
+                        :type ("list" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2946 2963]))                  
+                :type "void")
+                nil [2898 6672])
+            ("search_param_in_list" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [6706 6720])
+                    ("v" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [6721 6735]))                  
+                :type "int")
+                nil [6674 6805])
+            ("filter_set_param_val" function
+               (:arguments 
+                  ( ("f" variable
+                       (:pointer 1
+                        :type ("filter" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6833 6843])
+                    ("param" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6844 6862])
+                    ("val" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6863 6879]))                  
+                :type "void")
+                nil [6807 7566])
+            ("filter_set_param_with_node" function
+               (:arguments 
+                  ( ("f" variable
+                       (:pointer 1
+                        :type ("filter" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7600 7610])
+                    ("node" variable
+                       (:pointer 1
+                        :type ("xmlNode" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7611 7625]))                  
+                :type "void")
+                nil [7568 7917])
+            ("filter_get_param" function
+               (:pointer 1
+                :constant-flag t
+                :arguments 
+                  ( ("f" variable
+                       (:pointer 1
+                        :type ("filter" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7956 7966])
+                    ("param" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7967 7979]))                  
+                :type ("filter_param" type (:type "class") nil nil))
+                nil [7919 8141])
+            ("filter_get_param_val" function
+               (:constant-flag t
+                :arguments 
+                  ( ("f" variable
+                       (:pointer 1
+                        :type ("filter" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8187 8197])
+                    ("param" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8198 8216]))                  
+                :type ("filter_param_val" type (:type "class") nil nil))
+                nil [8143 8383]))          
+    :file "filter.c"
+    :pointmax 8384
+    :fsize 8465
+    :lastmodtime '(20413 47340)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "filter.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("FILTER_H" variable (:constant-flag t) nil [106 114])
+            ("def.h" include nil nil [116 132])
+            ("utils.h" include nil nil [133 151])
+            ("cv.h" include (:system-flag t) nil [152 167])
+            ("opencv2/highgui/highgui_c.h" include (:system-flag t) nil [168 206])
+            ("filter_perform" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("f" variable
+                       (:pointer 1
+                        :type ("filter" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2501 2511])
+                    ("img" variable
+                       (:pointer 2
+                        :type ("IplImage" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2512 2527]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2481 2528])
+            ("filter_create" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("filter" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2417 2422]))                  
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2395 2423])
+            ("search_param_in_list" function
+               (:type "int"
+                :arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2306 2320])
+                    ("v" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2321 2335]))                  
+                :typemodifiers ("extern" "\"C\"" "static")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2274 2336])
+            ("filter_get_param" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("filter_param" type (:type "class") nil nil)
+                :arguments 
+                  ( ("f" variable
+                       (:pointer 1
+                        :type ("filter" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2244 2254])
+                    ("param" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2255 2267]))                  
+                :constant-flag t
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2207 2268])
+            ("filter_get_param_val" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("filter_param_val" type (:type "class") nil nil)
+                :arguments 
+                  ( ("f" variable
+                       (:pointer 1
+                        :type ("filter" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2171 2181])
+                    ("param" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2182 2200]))                  
+                :constant-flag t
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2127 2201])
+            ("filter_param_free" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("param" variable
+                       (:pointer 1
+                        :type ("filter_param" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2101 2121]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2078 2122])
+            ("filter_free" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("f" variable
+                       (:pointer 1
+                        :type ("filter" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2061 2071]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2044 2072])
+            ("filter_print" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("f" variable
+                       (:pointer 1
+                        :type ("filter" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2027 2037]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2009 2038])
+            ("filter_set_param_val" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("f" variable
+                       (:pointer 1
+                        :type ("filter" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1906 1916])
+                    ("param" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1917 1935])
+                    ("val" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1936 1952]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1880 1953])
+            ("filter_set_param_with_node" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("f" variable
+                       (:pointer 1
+                        :type ("filter" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1753 1763])
+                    ("node" variable
+                       (:pointer 1
+                        :type ("xmlNode" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1764 1778]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1721 1779])
+            ("filter_load_param_from_node" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("node" variable
+                       (:pointer 1
+                        :type ("xmlNode" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1584 1598])
+                    ("param_list" variable
+                       (:pointer 1
+                        :type ("list" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1599 1616]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1551 1617])
+            ("filter_load" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("filter" type (:type "class") nil nil)
+                :arguments 
+                  ( ("filter_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1423 1441]))                  
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1403 1442])
+            ("filter_param_set" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1237 1253])
+            ("filter_param" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [968 979])
+                    ("type" variable (:type ("filter_param_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [988 1011])
+                    ("val" variable (:type ("filter_param_val" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1020 1041])
+                    ("max" variable (:type ("filter_param_val" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1050 1071])
+                    ("min" variable (:type ("filter_param_val" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1080 1101])
+                    ("cols" variable (:type ("filter_param_val" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1110 1132])
+                    ("rows" variable (:type ("filter_param_val" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1141 1163])
+                    ("def" variable (:type ("filter_param_val" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1172 1193]))                  )
+                (reparse-symbol extern-c-contents) [930 1224])
+            ("filter_param" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "filter_param"
+                :typedef ("filter_param" type (:type "struct") nil nil))
+                (reparse-symbol extern-c-contents) [930 1224])
+            ("filter_param_val" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "union"
+                :members 
+                  ( ("_int" variable (:type "int") (reparse-symbol classsubparts) [805 814])
+                    ("_double" variable (:type "double") (reparse-symbol classsubparts) [823 838])
+                    ("_charPtr" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [847 862])
+                    ("_intPtr" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol classsubparts) [871 884]))                  )
+                (reparse-symbol extern-c-contents) [764 908])
+            ("filter_param_val" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "filter_param_val"
+                :typedef ("filter_param_val" type (:type "union") nil nil))
+                (reparse-symbol extern-c-contents) [764 908])
+            ("filter_param_type" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("INT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [653 657])
+                    ("DOUBLE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [666 673])
+                    ("BOOL" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [682 687])
+                    ("STRING" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [696 703])
+                    ("MATRIX" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [712 724]))                  )
+                (reparse-symbol extern-c-contents) [612 743])
+            ("filter_param_type" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "filter_param_type"
+                :typedef ("filter_param_type" type (:type "enum") nil nil))
+                (reparse-symbol extern-c-contents) [612 743])
+            ("create_fun_type" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("filter" type (:type "class") nil nil)
+                :functionpointer-flag t)
+                (reparse-symbol extern-c-contents) [557 590])
+            ("filter" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [369 380])
+                    ("create" variable (:type "long int") (reparse-symbol classsubparts) [389 405])
+                    ("version" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [414 428])
+                    ("author" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [437 450])
+                    ("param" variable (:type ("list" type (:type "class") nil nil)) (reparse-symbol classsubparts) [459 470])
+                    ("perform" variable (:type ("perform_fun_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [489 514]))                  )
+                (reparse-symbol extern-c-contents) [337 543])
+            ("filter" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "filter"
+                :typedef ("filter" type (:type "struct") nil nil))
+                (reparse-symbol extern-c-contents) [337 543])
+            ("perform_fun_type" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :functionpointer-flag t)
+                (reparse-symbol extern-c-contents) [262 317])
+            ("C" extern (:members 
+              ( ("perform_fun_type" variable
+                   (:typemodifiers ("extern" "\"C\"")
+                    :type "void"
+                    :functionpointer-flag t)
+                    (reparse-symbol extern-c-contents) [262 317])
+                ("filter" type
+                   (:typemodifiers ("extern" "\"C\"")
+                    :type "typedef"
+                    :superclasses "filter"
+                    :typedef ("filter" type (:type "struct") nil nil))
+                    (reparse-symbol extern-c-contents) [337 543])
+                ("filter" type
+                   (:typemodifiers ("extern" "\"C\"")
+                    :type "struct"
+                    :members 
+                      ( ("name" variable
+                           (:pointer 1
+                            :type "char")
+                            (reparse-symbol classsubparts) [369 380])
+                        ("create" variable (:type "long int") (reparse-symbol classsubparts) [389 405])
+                        ("version" variable
+                           (:pointer 1
+                            :type "char")
+                            (reparse-symbol classsubparts) [414 428])
+                        ("author" variable
+                           (:pointer 1
+                            :type "char")
+                            (reparse-symbol classsubparts) [437 450])
+                        ("param" variable (:type ("list" type (:type "class") nil nil)) (reparse-symbol classsubparts) [459 470])
+                        ("perform" variable (:type ("perform_fun_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [489 514]))                      )
+                    (reparse-symbol extern-c-contents) [337 543])
+                ("create_fun_type" variable
+                   (:typemodifiers ("extern" "\"C\"")
+                    :type ("filter" type (:type "class") nil nil)
+                    :functionpointer-flag t)
+                    (reparse-symbol extern-c-contents) [557 590])
+                ("filter_param_type" type
+                   (:typemodifiers ("extern" "\"C\"")
+                    :type "typedef"
+                    :superclasses "filter_param_type"
+                    :typedef ("filter_param_type" type (:type "enum") nil nil))
+                    (reparse-symbol extern-c-contents) [612 743])
+                ("filter_param_type" type
+                   (:typemodifiers ("extern" "\"C\"")
+                    :type "enum"
+                    :members 
+                      ( ("INT" variable
+                           (:constant-flag t
+                            :type "int")
+                            (reparse-symbol enumsubparts) [653 657])
+                        ("DOUBLE" variable
+                           (:constant-flag t
+                            :type "int")
+                            (reparse-symbol enumsubparts) [666 673])
+                        ("BOOL" variable
+                           (:constant-flag t
+                            :type "int")
+                            (reparse-symbol enumsubparts) [682 687])
+                        ("STRING" variable
+                           (:constant-flag t
+                            :type "int")
+                            (reparse-symbol enumsubparts) [696 703])
+                        ("MATRIX" variable
+                           (:constant-flag t
+                            :type "int")
+                            (reparse-symbol enumsubparts) [712 724]))                      )
+                    (reparse-symbol extern-c-contents) [612 743])
+                ("filter_param_val" type
+                   (:typemodifiers ("extern" "\"C\"")
+                    :type "typedef"
+                    :superclasses "filter_param_val"
+                    :typedef ("filter_param_val" type (:type "union") nil nil))
+                    (reparse-symbol extern-c-contents) [764 908])
+                ("filter_param_val" type
+                   (:typemodifiers ("extern" "\"C\"")
+                    :type "union"
+                    :members 
+                      ( ("_int" variable (:type "int") (reparse-symbol classsubparts) [805 814])
+                        ("_double" variable (:type "double") (reparse-symbol classsubparts) [823 838])
+                        ("_charPtr" variable
+                           (:pointer 1
+                            :type "char")
+                            (reparse-symbol classsubparts) [847 862])
+                        ("_intPtr" variable
+                           (:pointer 1
+                            :type "int")
+                            (reparse-symbol classsubparts) [871 884]))                      )
+                    (reparse-symbol extern-c-contents) [764 908])
+                ("filter_param" type
+                   (:typemodifiers ("extern" "\"C\"")
+                    :type "typedef"
+                    :superclasses "filter_param"
+                    :typedef ("filter_param" type (:type "struct") nil nil))
+                    (reparse-symbol extern-c-contents) [930 1224])
+                ("filter_param" type
+                   (:typemodifiers ("extern" "\"C\"")
+                    :type "struct"
+                    :members 
+                      ( ("name" variable
+                           (:pointer 1
+                            :type "char")
+                            (reparse-symbol classsubparts) [968 979])
+                        ("type" variable (:type ("filter_param_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [988 1011])
+                        ("val" variable (:type ("filter_param_val" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1020 1041])
+                        ("max" variable (:type ("filter_param_val" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1050 1071])
+                        ("min" variable (:type ("filter_param_val" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1080 1101])
+                        ("cols" variable (:type ("filter_param_val" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1110 1132])
+                        ("rows" variable (:type ("filter_param_val" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1141 1163])
+                        ("def" variable (:type ("filter_param_val" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1172 1193]))                      )
+                    (reparse-symbol extern-c-contents) [930 1224])
+                ("filter_param_set" variable
+                   (:typemodifiers ("extern" "\"C\"")
+                    :constant-flag t)
+                    (reparse-symbol extern-c-contents) [1237 1253])
+                ("filter_load" function
+                   (:typemodifiers ("extern" "\"C\"")
+                    :type ("filter" type (:type "class") nil nil)
+                    :arguments 
+                      ( ("filter_name" variable
+                           (:pointer 1
+                            :type "char")
+                            (reparse-symbol arg-sub-list) [1423 1441]))                      
+                    :pointer 1
+                    :prototype-flag t)
+                    (reparse-symbol extern-c-contents) [1403 1442])
+                ("filter_load_param_from_node" function
+                   (:typemodifiers ("extern" "\"C\"")
+                    :type "void"
+                    :arguments 
+                      ( ("node" variable
+                           (:pointer 1
+                            :type ("xmlNode" type (:type "class") nil nil))
+                            (reparse-symbol arg-sub-list) [1584 1598])
+                        ("param_list" variable
+                           (:pointer 1
+                            :type ("list" type (:type "class") nil nil))
+                            (reparse-symbol arg-sub-list) [1599 1616]))                      
+                    :prototype-flag t)
+                    (reparse-symbol extern-c-contents) [1551 1617])
+                ("filter_set_param_with_node" function
+                   (:typemodifiers ("extern" "\"C\"")
+                    :type "void"
+                    :arguments 
+                      ( ("f" variable
+                           (:pointer 1
+                            :type ("filter" type (:type "class") nil nil))
+                            (reparse-symbol arg-sub-list) [1753 1763])
+                        ("node" variable
+                           (:pointer 1
+                            :type ("xmlNode" type (:type "class") nil nil))
+                            (reparse-symbol arg-sub-list) [1764 1778]))                      
+                    :prototype-flag t)
+                    (reparse-symbol extern-c-contents) [1721 1779])
+                ("filter_set_param_val" function
+                   (:typemodifiers ("extern" "\"C\"")
+                    :type "void"
+                    :arguments 
+                      ( ("f" variable
+                           (:pointer 1
+                            :type ("filter" type (:type "class") nil nil))
+                            (reparse-symbol arg-sub-list) [1906 1916])
+                        ("param" variable
+                           (:pointer 1
+                            :constant-flag t
+                            :type "char")
+                            (reparse-symbol arg-sub-list) [1917 1935])
+                        ("val" variable
+                           (:pointer 1
+                            :constant-flag t
+                            :type "char")
+                            (reparse-symbol arg-sub-list) [1936 1952]))                      
+                    :prototype-flag t)
+                    (reparse-symbol extern-c-contents) [1880 1953])
+                ("filter_print" function
+                   (:typemodifiers ("extern" "\"C\"")
+                    :type "void"
+                    :arguments 
+                      ( ("f" variable
+                           (:pointer 1
+                            :type ("filter" type (:type "class") nil nil))
+                            (reparse-symbol arg-sub-list) [2027 2037]))                      
+                    :prototype-flag t)
+                    (reparse-symbol extern-c-contents) [2009 2038])
+                ("filter_free" function
+                   (:typemodifiers ("extern" "\"C\"")
+                    :type "void"
+                    :arguments 
+                      ( ("f" variable
+                           (:pointer 1
+                            :type ("filter" type (:type "class") nil nil))
+                            (reparse-symbol arg-sub-list) [2061 2071]))                      
+                    :prototype-flag t)
+                    (reparse-symbol extern-c-contents) [2044 2072])
+                ("filter_param_free" function
+                   (:typemodifiers ("extern" "\"C\"")
+                    :type "void"
+                    :arguments 
+                      ( ("param" variable
+                           (:pointer 1
+                            :type ("filter_param" type (:type "class") nil nil))
+                            (reparse-symbol arg-sub-list) [2101 2121]))                      
+                    :prototype-flag t)
+                    (reparse-symbol extern-c-contents) [2078 2122])
+                ("filter_get_param_val" function
+                   (:typemodifiers ("extern" "\"C\"")
+                    :type ("filter_param_val" type (:type "class") nil nil)
+                    :arguments 
+                      ( ("f" variable
+                           (:pointer 1
+                            :type ("filter" type (:type "class") nil nil))
+                            (reparse-symbol arg-sub-list) [2171 2181])
+                        ("param" variable
+                           (:pointer 1
+                            :constant-flag t
+                            :type "char")
+                            (reparse-symbol arg-sub-list) [2182 2200]))                      
+                    :constant-flag t
+                    :prototype-flag t)
+                    (reparse-symbol extern-c-contents) [2127 2201])
+                ("filter_get_param" function
+                   (:typemodifiers ("extern" "\"C\"")
+                    :type ("filter_param" type (:type "class") nil nil)
+                    :arguments 
+                      ( ("f" variable
+                           (:pointer 1
+                            :type ("filter" type (:type "class") nil nil))
+                            (reparse-symbol arg-sub-list) [2244 2254])
+                        ("param" variable
+                           (:pointer 1
+                            :type "char")
+                            (reparse-symbol arg-sub-list) [2255 2267]))                      
+                    :constant-flag t
+                    :pointer 1
+                    :prototype-flag t)
+                    (reparse-symbol extern-c-contents) [2207 2268])
+                ("search_param_in_list" function
+                   (:type "int"
+                    :arguments 
+                      ( ("p" variable
+                           (:pointer 1
+                            :constant-flag t
+                            :type "void")
+                            (reparse-symbol arg-sub-list) [2306 2320])
+                        ("v" variable
+                           (:pointer 1
+                            :constant-flag t
+                            :type "void")
+                            (reparse-symbol arg-sub-list) [2321 2335]))                      
+                    :typemodifiers ("extern" "\"C\"" "static")
+                    :prototype-flag t)
+                    (reparse-symbol extern-c-contents) [2274 2336])
+                ("filter_create" function
+                   (:typemodifiers ("extern" "\"C\"")
+                    :type ("filter" type (:type "class") nil nil)
+                    :arguments 
+                      ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2417 2422]))                      
+                    :pointer 1
+                    :prototype-flag t)
+                    (reparse-symbol extern-c-contents) [2395 2423])
+                ("filter_perform" function
+                   (:typemodifiers ("extern" "\"C\"")
+                    :type "void"
+                    :arguments 
+                      ( ("f" variable
+                           (:pointer 1
+                            :type ("filter" type (:type "class") nil nil))
+                            (reparse-symbol arg-sub-list) [2501 2511])
+                        ("img" variable
+                           (:pointer 2
+                            :type ("IplImage" type (:type "class") nil nil))
+                            (reparse-symbol arg-sub-list) [2512 2527]))                      
+                    :prototype-flag t)
+                    (reparse-symbol extern-c-contents) [2481 2528]))              ) nil [228 2549]))          
+    :file "filter.h"
+    :pointmax 2581
+    :fsize 2844
+    :lastmodtime '(20376 52396)
+    :unmatched-syntax '((TYPEDEF 549 . 556) (TYPEDEF 254 . 261))
+    :lexical-table 
+        '(("filter_param_set" (spp-arg-list ("type" "var" "value") 1253 . 1269) . ((semantic-list "{var._##type=value;}" 1269 . 1289)))
+          ("FILTER_H")
+          )
+
+    )
+   (semanticdb-table "def.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("DEF_H" variable (:constant-flag t) nil [101 106])
+            ("assert.h" include (:system-flag t) nil [222 241])
+            ("debug.h" include nil nil [243 261])
+            ("opencv/cv.h" include (:system-flag t) nil [262 284])
+            ("uint" type
+               (:typedef ("unsigned int")
+                :superclasses "unsigned int"
+                :type "typedef")
+                nil [285 311])
+            ("ushort" type
+               (:typedef ("unsigned short")
+                :superclasses "unsigned short"
+                :type "typedef")
+                nil [312 342])
+            ("uchar" type
+               (:typedef ("unsigned char")
+                :superclasses "unsigned char"
+                :type "typedef")
+                nil [343 371])
+            ("PROJECT_INFO_LEN" variable (:constant-flag t) nil [383 399])
+            ("C" extern nil nil [427 471]))          
+    :file "def.h"
+    :pointmax 500
+    :fsize 509
+    :lastmodtime '(20363 49332)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("PROJECT_INFO_LEN" . ((semantic-list "(256)" 400 . 405)))
+          ("DEF_H")
+          )
+
+    )
+   (semanticdb-table "utils.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("UTILS_H" variable (:constant-flag t) nil [105 112])
+            ("get_min" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("hist" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1089 1099])
+                    ("length" variable (:type "int") (reparse-symbol arg-sub-list) [1100 1111]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1077 1112])
+            ("get_max" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("hist" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1049 1059])
+                    ("length" variable (:type "int") (reparse-symbol arg-sub-list) [1060 1071]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1037 1072])
+            ("string_to_matrix" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("string" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1011 1030]))                  
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [988 1031])
+            ("split" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("words" variable
+                       (:pointer 3
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [938 952])
+                    ("line" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [953 970])
+                    ("delim" variable (:type "char") (reparse-symbol arg-sub-list) [971 982]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [928 983])
+            ("count_char" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [754 770])
+                    ("c" variable (:type "char") (reparse-symbol arg-sub-list) [771 778]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [739 779])
+            ("exec_xpath_expr" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("doc" variable
+                       (:constant-flag t
+                        :type ("xmlDocPtr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [664 684])
+                    ("expr" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("xmlChar" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [685 705])
+                    ("object" variable
+                       (:pointer 1
+                        :type ("xmlXPathObjectPtr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [706 732]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [644 733])
+            ("DEL" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [469 472])
+            ("NEW" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [396 399])
+            ("string.h" include
+               (:typemodifiers ("extern" "\"C\"")
+                :system-flag t)
+                (reparse-symbol extern-c-contents) [339 358])
+            ("list.h" include (:typemodifiers ("extern" "\"C\"")) (reparse-symbol extern-c-contents) [321 338])
+            ("debug.h" include (:typemodifiers ("extern" "\"C\"")) (reparse-symbol extern-c-contents) [302 320])
+            ("libxml/xmlreader.h" include
+               (:typemodifiers ("extern" "\"C\"")
+                :system-flag t)
+                (reparse-symbol extern-c-contents) [271 300])
+            ("libxml/xpathInternals.h" include
+               (:typemodifiers ("extern" "\"C\"")
+                :system-flag t)
+                (reparse-symbol extern-c-contents) [235 269])
+            ("libxml/xpath.h" include
+               (:typemodifiers ("extern" "\"C\"")
+                :system-flag t)
+                (reparse-symbol extern-c-contents) [209 234])
+            ("libxml/parser.h" include
+               (:typemodifiers ("extern" "\"C\"")
+                :system-flag t)
+                (reparse-symbol extern-c-contents) [182 208])
+            ("libxml/tree.h" include
+               (:typemodifiers ("extern" "\"C\"")
+                :system-flag t)
+                (reparse-symbol extern-c-contents) [157 181])
+            ("C" extern (:members 
+              ( ("libxml/tree.h" include
+                   (:typemodifiers ("extern" "\"C\"")
+                    :system-flag t)
+                    (reparse-symbol extern-c-contents) [157 181])
+                ("libxml/parser.h" include
+                   (:typemodifiers ("extern" "\"C\"")
+                    :system-flag t)
+                    (reparse-symbol extern-c-contents) [182 208])
+                ("libxml/xpath.h" include
+                   (:typemodifiers ("extern" "\"C\"")
+                    :system-flag t)
+                    (reparse-symbol extern-c-contents) [209 234])
+                ("libxml/xpathInternals.h" include
+                   (:typemodifiers ("extern" "\"C\"")
+                    :system-flag t)
+                    (reparse-symbol extern-c-contents) [235 269])
+                ("libxml/xmlreader.h" include
+                   (:typemodifiers ("extern" "\"C\"")
+                    :system-flag t)
+                    (reparse-symbol extern-c-contents) [271 300])
+                ("debug.h" include (:typemodifiers ("extern" "\"C\"")) (reparse-symbol extern-c-contents) [302 320])
+                ("list.h" include (:typemodifiers ("extern" "\"C\"")) (reparse-symbol extern-c-contents) [321 338])
+                ("string.h" include
+                   (:typemodifiers ("extern" "\"C\"")
+                    :system-flag t)
+                    (reparse-symbol extern-c-contents) [339 358])
+                ("NEW" variable
+                   (:typemodifiers ("extern" "\"C\"")
+                    :constant-flag t)
+                    (reparse-symbol extern-c-contents) [396 399])
+                ("DEL" variable
+                   (:typemodifiers ("extern" "\"C\"")
+                    :constant-flag t)
+                    (reparse-symbol extern-c-contents) [469 472])
+                ("exec_xpath_expr" function
+                   (:typemodifiers ("extern" "\"C\"")
+                    :type "int"
+                    :arguments 
+                      ( ("doc" variable
+                           (:constant-flag t
+                            :type ("xmlDocPtr" type (:type "class") nil nil))
+                            (reparse-symbol arg-sub-list) [664 684])
+                        ("expr" variable
+                           (:pointer 1
+                            :constant-flag t
+                            :type ("xmlChar" type (:type "class") nil nil))
+                            (reparse-symbol arg-sub-list) [685 705])
+                        ("object" variable
+                           (:pointer 1
+                            :type ("xmlXPathObjectPtr" type (:type "class") nil nil))
+                            (reparse-symbol arg-sub-list) [706 732]))                      
+                    :prototype-flag t)
+                    (reparse-symbol extern-c-contents) [644 733])
+                ("count_char" function
+                   (:typemodifiers ("extern" "\"C\"")
+                    :type "int"
+                    :arguments 
+                      ( ("str" variable
+                           (:pointer 1
+                            :constant-flag t
+                            :type "char")
+                            (reparse-symbol arg-sub-list) [754 770])
+                        ("c" variable (:type "char") (reparse-symbol arg-sub-list) [771 778]))                      
+                    :prototype-flag t)
+                    (reparse-symbol extern-c-contents) [739 779])
+                ("split" function
+                   (:typemodifiers ("extern" "\"C\"")
+                    :type "int"
+                    :arguments 
+                      ( ("words" variable
+                           (:pointer 3
+                            :type "char")
+                            (reparse-symbol arg-sub-list) [938 952])
+                        ("line" variable
+                           (:pointer 1
+                            :constant-flag t
+                            :type "char")
+                            (reparse-symbol arg-sub-list) [953 970])
+                        ("delim" variable (:type "char") (reparse-symbol arg-sub-list) [971 982]))                      
+                    :prototype-flag t)
+                    (reparse-symbol extern-c-contents) [928 983])
+                ("string_to_matrix" function
+                   (:typemodifiers ("extern" "\"C\"")
+                    :type "int"
+                    :arguments 
+                      ( ("string" variable
+                           (:pointer 1
+                            :constant-flag t
+                            :type "char")
+                            (reparse-symbol arg-sub-list) [1011 1030]))                      
+                    :pointer 1
+                    :prototype-flag t)
+                    (reparse-symbol extern-c-contents) [988 1031])
+                ("get_max" function
+                   (:typemodifiers ("extern" "\"C\"")
+                    :type "int"
+                    :arguments 
+                      ( ("hist" variable
+                           (:pointer 1
+                            :type "int")
+                            (reparse-symbol arg-sub-list) [1049 1059])
+                        ("length" variable (:type "int") (reparse-symbol arg-sub-list) [1060 1071]))                      
+                    :prototype-flag t)
+                    (reparse-symbol extern-c-contents) [1037 1072])
+                ("get_min" function
+                   (:typemodifiers ("extern" "\"C\"")
+                    :type "int"
+                    :arguments 
+                      ( ("hist" variable
+                           (:pointer 1
+                            :type "int")
+                            (reparse-symbol arg-sub-list) [1089 1099])
+                        ("length" variable (:type "int") (reparse-symbol arg-sub-list) [1100 1111]))                      
+                    :prototype-flag t)
+                    (reparse-symbol extern-c-contents) [1077 1112]))              ) nil [136 1135]))          
+    :file "utils.h"
+    :pointmax 1166
+    :fsize 1269
+    :lastmodtime '(20363 49332)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("DEL" (spp-arg-list ("p") 472 . 477) . ((semantic-list "{ free((void*)p); p = NULL; }" 478 . 507)))
+          ("NEW" (spp-arg-list ("t" "p" "size") 399 . 413) . ((semantic-list "{ p = (t)malloc(size); memset( p, 0, size ); }" 414 . 460)))
+          ("UTILS_H")
+          )
+
+    )
+   (semanticdb-table "debug.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("DEBUG_H" variable (:constant-flag t) nil [105 112])
+            ("time.h" include (:system-flag t) nil [113 130])
+            ("stdarg.h" include (:system-flag t) nil [131 150])
+            ("print_error" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("fmt" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [531 547])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [548 552]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [514 553])
+            ("print_error_begin" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [471 482])
+                    ("function" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [483 498])
+                    ("line" variable (:type "int") (reparse-symbol arg-sub-list) [499 508]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [448 509])
+            ("DBG" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [338 341])
+            ("C" extern (:members 
+              ( ("DBG" variable
+                   (:typemodifiers ("extern" "\"C\"")
+                    :constant-flag t)
+                    (reparse-symbol extern-c-contents) [338 341])
+                ("print_error_begin" function
+                   (:typemodifiers ("extern" "\"C\"")
+                    :type "void"
+                    :arguments 
+                      ( ("file" variable
+                           (:pointer 1
+                            :type "char")
+                            (reparse-symbol arg-sub-list) [471 482])
+                        ("function" variable
+                           (:pointer 1
+                            :type "char")
+                            (reparse-symbol arg-sub-list) [483 498])
+                        ("line" variable (:type "int") (reparse-symbol arg-sub-list) [499 508]))                      
+                    :prototype-flag t)
+                    (reparse-symbol extern-c-contents) [448 509])
+                ("print_error" function
+                   (:typemodifiers ("extern" "\"C\"")
+                    :type "void"
+                    :arguments 
+                      ( ("fmt" variable
+                           (:pointer 1
+                            :constant-flag t
+                            :type "char")
+                            (reparse-symbol arg-sub-list) [531 547])
+                        ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [548 552]))                      
+                    :prototype-flag t)
+                    (reparse-symbol extern-c-contents) [514 553]))              ) nil [174 575]))          
+    :file "debug.h"
+    :pointmax 606
+    :fsize 615
+    :lastmodtime '(20376 49692)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("DEBUG_H")
+          ("DBG" (spp-arg-list ("args") 341 . 347) . ((semantic-list "{\\
+    print_error_begin(__FILE__, (char*)__func__, __LINE__);\\
+	print_error args;\\
+}" 350 . 435)))
+          )
+
+    )
+   (semanticdb-table "list.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("LIST_H" variable (:constant-flag t) nil [103 109])
+            ("utils.h" include nil nil [111 129])
+            ("list" type
+               (:typedef ("list" type (:type "struct") nil nil)
+                :superclasses "list"
+                :type "typedef")
+                nil [130 206])
+            ("list" type
+               (:members 
+                  ( ("size" variable (:type "int") (reparse-symbol classsubparts) [156 165])
+                    ("count" variable (:type "int") (reparse-symbol classsubparts) [170 180])
+                    ("items" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol classsubparts) [185 198]))                  
+                :type "struct")
+                nil [130 206])
+            ("comp_func" variable
+               (:functionpointer-flag t
+                :type "int")
+                nil [215 260])
+            ("search_func" variable
+               (:functionpointer-flag t
+                :type "int")
+                nil [269 316])
+            ("list_cleanup" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("l" variable
+                       (:pointer 1
+                        :type ("list" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [608 616]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [590 617])
+            ("list_sort" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("l" variable
+                       (:pointer 1
+                        :type ("list" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [560 568])
+                    ("comp" variable (:type ("comp_func" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [569 584]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [545 585])
+            ("list_search" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("l" variable
+                       (:pointer 1
+                        :type ("list" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [504 512])
+                    ("" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [513 519])
+                    ("search" variable (:type ("search_func" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [520 539]))                  
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [486 540])
+            ("list_remove" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("l" variable
+                       (:pointer 1
+                        :type ("list" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [460 468])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [469 480]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [444 481])
+            ("list_append" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("l" variable
+                       (:pointer 1
+                        :type ("list" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [418 426])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [427 438]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [402 439])
+            ("list_create" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("l" variable
+                       (:pointer 1
+                        :type ("list" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [378 386])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [387 396]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [362 397])
+            ("C" extern (:members 
+              ( ("list_create" function
+                   (:typemodifiers ("extern" "\"C\"")
+                    :type "int"
+                    :arguments 
+                      ( ("l" variable
+                           (:pointer 1
+                            :type ("list" type (:type "class") nil nil))
+                            (reparse-symbol arg-sub-list) [378 386])
+                        ("size" variable (:type "int") (reparse-symbol arg-sub-list) [387 396]))                      
+                    :prototype-flag t)
+                    (reparse-symbol extern-c-contents) [362 397])
+                ("list_append" function
+                   (:typemodifiers ("extern" "\"C\"")
+                    :type "int"
+                    :arguments 
+                      ( ("l" variable
+                           (:pointer 1
+                            :type ("list" type (:type "class") nil nil))
+                            (reparse-symbol arg-sub-list) [418 426])
+                        ("data" variable
+                           (:pointer 1
+                            :type "void")
+                            (reparse-symbol arg-sub-list) [427 438]))                      
+                    :prototype-flag t)
+                    (reparse-symbol extern-c-contents) [402 439])
+                ("list_remove" function
+                   (:typemodifiers ("extern" "\"C\"")
+                    :type "int"
+                    :arguments 
+                      ( ("l" variable
+                           (:pointer 1
+                            :type ("list" type (:type "class") nil nil))
+                            (reparse-symbol arg-sub-list) [460 468])
+                        ("data" variable
+                           (:pointer 1
+                            :type "void")
+                            (reparse-symbol arg-sub-list) [469 480]))                      
+                    :prototype-flag t)
+                    (reparse-symbol extern-c-contents) [444 481])
+                ("list_search" function
+                   (:typemodifiers ("extern" "\"C\"")
+                    :type "void"
+                    :arguments 
+                      ( ("l" variable
+                           (:pointer 1
+                            :type ("list" type (:type "class") nil nil))
+                            (reparse-symbol arg-sub-list) [504 512])
+                        ("" variable
+                           (:pointer 1
+                            :type "void")
+                            (reparse-symbol arg-sub-list) [513 519])
+                        ("search" variable (:type ("search_func" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [520 539]))                      
+                    :pointer 1
+                    :prototype-flag t)
+                    (reparse-symbol extern-c-contents) [486 540])
+                ("list_sort" function
+                   (:typemodifiers ("extern" "\"C\"")
+                    :type "void"
+                    :arguments 
+                      ( ("l" variable
+                           (:pointer 1
+                            :type ("list" type (:type "class") nil nil))
+                            (reparse-symbol arg-sub-list) [560 568])
+                        ("comp" variable (:type ("comp_func" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [569 584]))                      
+                    :prototype-flag t)
+                    (reparse-symbol extern-c-contents) [545 585])
+                ("list_cleanup" function
+                   (:typemodifiers ("extern" "\"C\"")
+                    :type "void"
+                    :arguments 
+                      ( ("l" variable
+                           (:pointer 1
+                            :type ("list" type (:type "class") nil nil))
+                            (reparse-symbol arg-sub-list) [608 616]))                      
+                    :prototype-flag t)
+                    (reparse-symbol extern-c-contents) [590 617]))              ) nil [337 640]))          
+    :file "list.h"
+    :pointmax 670
+    :fsize 679
+    :lastmodtime '(20363 49332)
+    :unmatched-syntax '((TYPEDEF 261 . 268) (TYPEDEF 207 . 214))
+    :lexical-table 
+        '(("LIST_H")
+          )
+
+    )
+   )
+  :file "!home!feng!paper_stuff!captcha_breaker!client!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

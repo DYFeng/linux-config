@@ -1,0 +1,359 @@
+;; Object detail/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "detail/"
+  :tables (list 
+   (semanticdb-table "dynamic_bitset.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("BOOST_DETAIL_DYNAMIC_BITSET_HPP" variable (:constant-flag t) nil [466 497])
+            ("cstddef" include (:system-flag t) nil [499 517])
+            ("boost/config.hpp" include nil nil [518 545])
+            ("boost/detail/workaround.hpp" include nil nil [546 584])
+            ("boost" type
+               (:members 
+                  ( ("detail" type
+                       (:members 
+                          ( ("dynamic_bitset_impl" type
+                               (:members 
+                                  ( ("object_representation" function
+                                       (:template 
+                                          ( ("T" type (:type "class") nil nil))                                          
+                                        :type "unsigned char"
+                                        :arguments 
+                                          ( ("p" variable
+                                               (:pointer 1
+                                                :type ("T" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [889 894]))                                          
+                                        :constant-flag t
+                                        :typemodifiers ("inline")
+                                        :pointer 1)
+                                        (reparse-symbol namespacesubparts) [811 987])
+                                    ("shifter" type
+                                       (:template 
+                                          ( ("T" type (:type "class") nil nil)
+                                            ("int" type nil nil nil)
+                                            ("int" type nil nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("left_shift" function
+                                               (:typemodifiers ("static")
+                                                :arguments 
+                                                  ( ("v" variable
+                                                       (:reference 1
+                                                        :type ("T" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [1109 1115]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [1086 1235]))                                          )
+                                        (reparse-symbol namespacesubparts) [993 1242])
+                                    ("byte_type" type
+                                       (:typedef ("unsigned char")
+                                        :superclasses "unsigned char"
+                                        :type "typedef")
+                                        (reparse-symbol namespacesubparts) [1309 1341])
+                                    ("value_to_type" type
+                                       (:template 
+                                          ( ("bool" type nil nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("value_to_type" function
+                                               (:constructor-flag t
+                                                :type ("value_to_type" type (:type "struct") nil nil))
+                                                (reparse-symbol classsubparts) [1841 1859]))                                          )
+                                        (reparse-symbol namespacesubparts) [1780 1866])
+                                    ("access_by_bytes" variable
+                                       (:constant-flag t
+                                        :type "bool")
+                                        (reparse-symbol namespacesubparts) [1871 1905])
+                                    ("access_by_blocks" variable
+                                       (:constant-flag t
+                                        :type "bool")
+                                        (reparse-symbol namespacesubparts) [1910 1946])
+                                    ("count_table" type
+                                       (:template 
+                                          ( ("bool" type nil nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("table" variable
+                                               (:dereference 1
+                                                :typemodifiers ("static")
+                                                :constant-flag t
+                                                :type ("byte_type" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [2120 2151]))                                          )
+                                        (reparse-symbol namespacesubparts) [2061 2154])
+                                    ("count_table" type
+                                       (:type "struct"
+                                        :template-specifier 
+                                          ( ("false" type nil nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [2160 2221])
+                                    ("table_width" variable
+                                       (:constant-flag t
+                                        :type "unsigned int")
+                                        (reparse-symbol namespacesubparts) [2229 2264])
+                                    ("count_table::table" variable
+                                       (:dereference 1
+                                        :constant-flag t
+                                        :type ("byte_type" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [2270 3224])
+                                    ("do_count" function
+                                       (:template 
+                                          ( ("Iterator" type (:type "class") nil nil))                                          
+                                        :type ("std::size_t" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("first" variable (:type ("Iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3340 3355])
+                                            ("length" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3356 3375])
+                                            ("" variable (:type "int") (reparse-symbol arg-sub-list) [3409 3429])
+                                            ("" variable
+                                               (:pointer 1
+                                                :type ("value_to_type" type
+                                                     (:template-specifier 
+                                                        ( ("access_by_bytes" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [3463 3496]))                                          
+                                        :typemodifiers ("inline"))
+                                        (reparse-symbol namespacesubparts) [3278 3862])
+                                    ("do_count" function
+                                       (:template 
+                                          ( ("Iterator" type (:type "class") nil nil)
+                                            ("ValueType" type (:type "class") nil nil))                                          
+                                        :type ("std::size_t" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("first" variable (:type ("Iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3998 4013])
+                                            ("length" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4014 4033])
+                                            ("" variable (:type ("ValueType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4034 4044])
+                                            ("" variable
+                                               (:pointer 1
+                                                :type ("value_to_type" type
+                                                     (:template-specifier 
+                                                        ( ("access_by_blocks" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [4078 4111]))                                          
+                                        :typemodifiers ("inline"))
+                                        (reparse-symbol namespacesubparts) [3916 4462])
+                                    ("vector_max_size_workaround" function
+                                       (:template 
+                                          ( ("T" type (:type "class") nil nil))                                          
+                                        :type ("T::size_type" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("v" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("T" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4822 4834]))                                          
+                                        :typemodifiers ("typename"))
+                                        (reparse-symbol namespacesubparts) [4747 5212])
+                                    ("allowed_block_type" type
+                                       (:template 
+                                          ( ("T" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("" type
+                                               (:members 
+                                                  ( ("value" variable
+                                                       (:constant-flag t
+                                                        :default-value (5321 5326)
+                                                        :type "int")
+                                                        (reparse-symbol enumsubparts) [5313 5326]))                                                  
+                                                :type "enum")
+                                                (reparse-symbol classsubparts) [5306 5333]))                                          )
+                                        (reparse-symbol namespacesubparts) [5244 5364])
+                                    ("allowed_block_type" type
+                                       (:type "struct"
+                                        :members 
+                                          ( ("" type
+                                               (:members 
+                                                  ( ("value" variable
+                                                       (:constant-flag t
+                                                        :default-value (5443 5450)
+                                                        :type "int")
+                                                        (reparse-symbol enumsubparts) [5435 5450]))                                                  
+                                                :type "enum")
+                                                (reparse-symbol classsubparts) [5428 5451]))                                          
+                                        :template-specifier 
+                                          ( ("bool" type nil nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [5370 5458])
+                                    ("is_numeric" type
+                                       (:template 
+                                          ( ("T" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("" type
+                                               (:members 
+                                                  ( ("value" variable
+                                                       (:constant-flag t
+                                                        :default-value (5534 5541)
+                                                        :type "int")
+                                                        (reparse-symbol enumsubparts) [5526 5541]))                                                  
+                                                :type "enum")
+                                                (reparse-symbol classsubparts) [5519 5542]))                                          )
+                                        (reparse-symbol namespacesubparts) [5465 5549])
+                                    ("BOOST_dynamic_bitset_is_numeric" variable (:constant-flag t) (reparse-symbol namespacesubparts) [5562 5593])
+                                    ("is_numeric" variable (:type "int") (reparse-symbol namespacesubparts) [5826 5864])
+                                    ("is_numeric" variable (:type "int") (reparse-symbol namespacesubparts) [5869 5907])
+                                    ("is_numeric" variable (:type "int") (reparse-symbol namespacesubparts) [5954 5995])
+                                    ("is_numeric" variable (:type "int") (reparse-symbol namespacesubparts) [6008 6053])
+                                    ("is_numeric" variable (:type "int") (reparse-symbol namespacesubparts) [6058 6101])
+                                    ("is_numeric" variable (:type "int") (reparse-symbol namespacesubparts) [6106 6143])
+                                    ("is_numeric" variable (:type "int") (reparse-symbol namespacesubparts) [6148 6190])
+                                    ("is_numeric" variable (:type "int") (reparse-symbol namespacesubparts) [6196 6243])
+                                    ("is_numeric" variable (:type "int") (reparse-symbol namespacesubparts) [6248 6296])
+                                    ("is_numeric" variable (:type "int") (reparse-symbol namespacesubparts) [6301 6347])
+                                    ("is_numeric" variable (:type "int") (reparse-symbol namespacesubparts) [6352 6399]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [629 6785]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [608 6812]))                  
+                :type "namespace")
+                nil [587 6835]))          
+    :file "dynamic_bitset.hpp"
+    :pointmax 6881
+    :fsize 6880
+    :lastmodtime '(20225 54165)
+    :unmatched-syntax '((STRUCT "struct" 6352 . 6398) (punctuation ">" 6352 . 6398) (punctuation "<" 6352 . 6398) (TEMPLATE "template" 6352 . 6398) (STRUCT "struct" 6301 . 6346) (punctuation ">" 6301 . 6346) (punctuation "<" 6301 . 6346) (TEMPLATE "template" 6301 . 6346) (STRUCT "struct" 6248 . 6295) (punctuation ">" 6248 . 6295) (punctuation "<" 6248 . 6295) (TEMPLATE "template" 6248 . 6295) (STRUCT "struct" 6196 . 6242) (punctuation ">" 6196 . 6242) (punctuation "<" 6196 . 6242) (TEMPLATE "template" 6196 . 6242) (STRUCT "struct" 6148 . 6189) (punctuation ">" 6148 . 6189) (punctuation "<" 6148 . 6189) (TEMPLATE "template" 6148 . 6189) (STRUCT "struct" 6106 . 6142) (punctuation ">" 6106 . 6142) (punctuation "<" 6106 . 6142) (TEMPLATE "template" 6106 . 6142) (STRUCT "struct" 6058 . 6100) (punctuation ">" 6058 . 6100) (punctuation "<" 6058 . 6100) (TEMPLATE "template" 6058 . 6100) (STRUCT "struct" 6008 . 6052) (punctuation ">" 6008 . 6052) (punctuation "<" 6008 . 6052) (TEMPLATE "template" 6008 . 6052) (STRUCT "struct" 5954 . 5994) (punctuation ">" 5954 . 5994) (punctuation "<" 5954 . 5994) (TEMPLATE "template" 5954 . 5994) (STRUCT "struct" 5869 . 5906) (punctuation ">" 5869 . 5906) (punctuation "<" 5869 . 5906) (TEMPLATE "template" 5869 . 5906) (STRUCT "struct" 5826 . 5863) (punctuation ">" 5826 . 5863) (punctuation "<" 5826 . 5863) (TEMPLATE "template" 5826 . 5863) (number 5329 . 5330) (punctuation 5327 . 5328) (number 5329 . 5330) (punctuation 5327 . 5328))
+    :lexical-table 
+        '(("x")
+          ("BOOST_DETAIL_DYNAMIC_BITSET_HPP")
+          )
+
+    )
+   (semanticdb-table "iterator.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("ITERATOR_DWA122600_HPP_" variable (:constant-flag t) nil [2397 2420])
+            ("boost/config.hpp" include (:system-flag t) nil [2422 2450])
+            ("iterator" include (:system-flag t) nil [2451 2471])
+            ("boost" type
+               (:members 
+                  ( ("detail" type
+                       (:members 
+                          ( ("iterator_traits" type
+                               (:template 
+                                  ( ("Iterator" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :superclasses 
+                                  ( ("std::iterator_traits" type
+                                       (:protection "unspecified"
+                                        :type "class")
+                                        nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [3430 3519])
+                            ("std::distance" using (:type ("std::distance" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [3520 3540]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [3360 3543]))                  
+                :type "namespace")
+                nil [3342 3544]))          
+    :file "iterator.hpp"
+    :pointmax 15833
+    :fsize 15832
+    :lastmodtime '(20225 54165)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("ITERATOR_DWA122600_HPP_")
+          )
+
+    )
+   (semanticdb-table "workaround.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("WORKAROUND_DWA2002126_HPP" variable (:constant-flag t) nil [234 259])
+            ("boost/config.hpp" include (:system-flag t) nil [1515 1542])
+            ("__BORLANDC___WORKAROUND_GUARD" variable (:constant-flag t) nil [1573 1602])
+            ("__CODEGEARC___WORKAROUND_GUARD" variable (:constant-flag t) nil [1688 1718])
+            ("_MSC_VER_WORKAROUND_GUARD" variable (:constant-flag t) nil [1800 1825])
+            ("_MSC_FULL_VER_WORKAROUND_GUARD" variable (:constant-flag t) nil [1907 1937])
+            ("BOOST_MSVC_WORKAROUND_GUARD" variable (:constant-flag t) nil [2021 2048])
+            ("BOOST_MSVC_FULL_VER_WORKAROUND_GUARD" variable (:constant-flag t) nil [2138 2174])
+            ("__GNUC___WORKAROUND_GUARD" variable (:constant-flag t) nil [2304 2329])
+            ("__GNUC_MINOR___WORKAROUND_GUARD" variable (:constant-flag t) nil [2418 2449])
+            ("__GNUC_PATCHLEVEL___WORKAROUND_GUARD" variable (:constant-flag t) nil [2548 2584])
+            ("__IBMCPP___WORKAROUND_GUARD" variable (:constant-flag t) nil [2621 2648])
+            ("__SUNPRO_CC_WORKAROUND_GUARD" variable (:constant-flag t) nil [2730 2758])
+            ("__DECCXX_VER_WORKAROUND_GUARD" variable (:constant-flag t) nil [2842 2871])
+            ("__MWERKS___WORKAROUND_GUARD" variable (:constant-flag t) nil [2954 2981])
+            ("__EDG___WORKAROUND_GUARD" variable (:constant-flag t) nil [3059 3083])
+            ("__EDG_VERSION___WORKAROUND_GUARD" variable (:constant-flag t) nil [3166 3198])
+            ("__HP_aCC_WORKAROUND_GUARD" variable (:constant-flag t) nil [3282 3307])
+            ("__hpxstd98_WORKAROUND_GUARD" variable (:constant-flag t) nil [3386 3413])
+            ("_CRAYC_WORKAROUND_GUARD" variable (:constant-flag t) nil [3490 3513])
+            ("__DMC___WORKAROUND_GUARD" variable (:constant-flag t) nil [3587 3611])
+            ("MPW_CPLUS_WORKAROUND_GUARD" variable (:constant-flag t) nil [3688 3714])
+            ("__COMO___WORKAROUND_GUARD" variable (:constant-flag t) nil [3792 3817])
+            ("__COMO_VERSION___WORKAROUND_GUARD" variable (:constant-flag t) nil [3902 3935])
+            ("__INTEL_COMPILER_WORKAROUND_GUARD" variable (:constant-flag t) nil [4028 4061])
+            ("__ICL_WORKAROUND_GUARD" variable (:constant-flag t) nil [4143 4165])
+            ("_COMPILER_VERSION_WORKAROUND_GUARD" variable (:constant-flag t) nil [4248 4282])
+            ("_RWSTD_VER_WORKAROUND_GUARD" variable (:constant-flag t) nil [4371 4398])
+            ("BOOST_RWSTD_VER_WORKAROUND_GUARD" variable (:constant-flag t) nil [4484 4516])
+            ("__GLIBCPP___WORKAROUND_GUARD" variable (:constant-flag t) nil [4603 4631])
+            ("_GLIBCXX_USE_C99_FP_MACROS_DYNAMIC_WORKAROUND_GUARD" variable (:constant-flag t) nil [4737 4788])
+            ("__SGI_STL_PORT_WORKAROUND_GUARD" variable (:constant-flag t) nil [4897 4928])
+            ("_STLPORT_VERSION_WORKAROUND_GUARD" variable (:constant-flag t) nil [5019 5052])
+            ("__LIBCOMO_VERSION___WORKAROUND_GUARD" variable (:constant-flag t) nil [5148 5184])
+            ("_CPPLIB_VER_WORKAROUND_GUARD" variable (:constant-flag t) nil [5275 5303])
+            ("BOOST_INTEL_CXX_VERSION_WORKAROUND_GUARD" variable (:constant-flag t) nil [5399 5439])
+            ("BOOST_INTEL_WIN_WORKAROUND_GUARD" variable (:constant-flag t) nil [5538 5570])
+            ("BOOST_DINKUMWARE_STDLIB_WORKAROUND_GUARD" variable (:constant-flag t) nil [5669 5709])
+            ("BOOST_INTEL_WORKAROUND_GUARD" variable (:constant-flag t) nil [5804 5832])
+            ("BOOST_MPL_CFG_GCC_WORKAROUND_GUARD" variable (:constant-flag t) nil [5959 5993])
+            ("BOOST_WORKAROUND" variable (:constant-flag t) nil [6007 6023])
+            ("BOOST_TESTED_AT" variable (:constant-flag t) nil [7134 7149]))          
+    :file "workaround.hpp"
+    :pointmax 7286
+    :fsize 7285
+    :lastmodtime '(20225 54165)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("_STLPORT_VERSION_WORKAROUND_GUARD" . ((number "1" 5053 . 5054)))
+          ("__LIBCOMO_VERSION___WORKAROUND_GUARD" . ((number "1" 5185 . 5186)))
+          ("BOOST_MSVC_FULL_VER_WORKAROUND_GUARD" . ((number "1" 2175 . 2176)))
+          ("__MWERKS___WORKAROUND_GUARD" . ((number "1" 2982 . 2983)))
+          ("__DMC___WORKAROUND_GUARD" . ((number "1" 3612 . 3613)))
+          ("__COMO_VERSION___WORKAROUND_GUARD" . ((number "1" 3936 . 3937)))
+          ("BOOST_WORKAROUND" (spp-arg-list ("symbol" "test") 6023 . 6037) . ((semantic-list "((symbol ## _WORKAROUND_GUARD + 0 == 0) &&     \\
+         (symbol != 0) && (1 % (( (symbol test) ) + 1)))" 6064 . 6169)))
+          ("__CODEGEARC___WORKAROUND_GUARD" . ((number "1" 1719 . 1720)))
+          ("_MSC_VER_WORKAROUND_GUARD" . ((number "1" 1826 . 1827)))
+          ("__IBMCPP___WORKAROUND_GUARD" . ((number "1" 2649 . 2650)))
+          ("__EDG_VERSION___WORKAROUND_GUARD" . ((number "1" 3199 . 3200)))
+          ("_RWSTD_VER_WORKAROUND_GUARD" . ((number "1" 4399 . 4400)))
+          ("__SGI_STL_PORT_WORKAROUND_GUARD" . ((number "1" 4929 . 4930)))
+          ("BOOST_INTEL_CXX_VERSION_WORKAROUND_GUARD" . ((number "1" 5440 . 5441)))
+          ("__INTEL_COMPILER_WORKAROUND_GUARD" . ((number "1" 4062 . 4063)))
+          ("__BORLANDC___WORKAROUND_GUARD" . ((number "1" 1603 . 1604)))
+          ("__COMO___WORKAROUND_GUARD" . ((number "1" 3818 . 3819)))
+          ("BOOST_RWSTD_VER_WORKAROUND_GUARD" . ((number "1" 4517 . 4518)))
+          ("BOOST_MPL_CFG_GCC_WORKAROUND_GUARD" . ((number "0" 5994 . 5995)))
+          ("BOOST_TESTED_AT" (spp-arg-list ("value") 7149 . 7156) . 
+              ((punctuation "!" 7157 . 7158) (punctuation "=" 7158 . 7159) (semantic-list "((value)-(value))" 7160 . 7177)))
+          ("_MSC_FULL_VER_WORKAROUND_GUARD" . ((number "1" 1938 . 1939)))
+          ("__GNUC_PATCHLEVEL___WORKAROUND_GUARD" . ((number "0" 2585 . 2586)))
+          ("__GNUC_MINOR___WORKAROUND_GUARD" . ((number "0" 2450 . 2451)))
+          ("__DECCXX_VER_WORKAROUND_GUARD" . ((number "1" 2872 . 2873)))
+          ("__HP_aCC_WORKAROUND_GUARD" . ((number "1" 3308 . 3309)))
+          ("_CPPLIB_VER_WORKAROUND_GUARD" . ((number "1" 5304 . 5305)))
+          ("BOOST_INTEL_WIN_WORKAROUND_GUARD" . ((number "1" 5571 . 5572)))
+          ("__hpxstd98_WORKAROUND_GUARD" . ((number "1" 3414 . 3415)))
+          ("__GNUC___WORKAROUND_GUARD" . ((number "0" 2330 . 2331)))
+          ("__GLIBCPP___WORKAROUND_GUARD" . ((number "1" 4632 . 4633)))
+          ("_GLIBCXX_USE_C99_FP_MACROS_DYNAMIC_WORKAROUND_GUARD" . ((number "1" 4789 . 4790)))
+          ("WORKAROUND_DWA2002126_HPP")
+          ("MPW_CPLUS_WORKAROUND_GUARD" . ((number "1" 3715 . 3716)))
+          ("BOOST_MSVC_WORKAROUND_GUARD" . ((number "1" 2049 . 2050)))
+          ("__SUNPRO_CC_WORKAROUND_GUARD" . ((number "1" 2759 . 2760)))
+          ("__EDG___WORKAROUND_GUARD" . ((number "1" 3084 . 3085)))
+          ("_CRAYC_WORKAROUND_GUARD" . ((number "1" 3514 . 3515)))
+          ("_COMPILER_VERSION_WORKAROUND_GUARD" . ((number "1" 4283 . 4284)))
+          ("BOOST_DINKUMWARE_STDLIB_WORKAROUND_GUARD" . ((number "1" 5710 . 5711)))
+          ("BOOST_INTEL_WORKAROUND_GUARD" . ((number "1" 5833 . 5834)))
+          ("__ICL_WORKAROUND_GUARD" . ((number "1" 4166 . 4167)))
+          )
+
+    )
+   )
+  :file "!usr!include!boost!detail!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

@@ -1,0 +1,108 @@
+;; Object captcha_breaker_qt4/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "captcha_breaker_qt4/"
+  :tables (list 
+   (semanticdb-table "dragWidget.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("dragWidget.h" include nil nil [1 24])
+            ("dragWidget" function
+               (:constructor-flag t
+                :parent "dragWidget"
+                :arguments 
+                  ( ("parent" variable
+                       (:pointer 1
+                        :type ("QWidget" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [49 65]))                  
+                :type ("dragWidget" type (:type "class") nil nil))
+                nil [26 280])
+            ("wheelEvent" function
+               (:parent "dragWidget"
+                :arguments 
+                  ( ("event" variable
+                       (:pointer 1
+                        :type ("QWheelEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [310 329]))                  
+                :type "void")
+                nil [282 447])
+            ("getImageRGB" function
+               (:parent "dragWidget"
+                :arguments 
+                  ( ("pos" variable (:type ("QPoint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [478 489]))                  
+                :type "void")
+                nil [449 623])
+            ("mousePressEvent" function
+               (:parent "dragWidget"
+                :arguments 
+                  ( ("event" variable
+                       (:pointer 1
+                        :type ("QMouseEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [658 677]))                  
+                :type "void")
+                nil [625 1156])
+            ("addPoint" function
+               (:parent "dragWidget"
+                :arguments 
+                  ( ("color" variable (:type ("QColor" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1184 1197]))                  
+                :type "void")
+                nil [1158 1331])
+            ("mouseMoveEvent" function
+               (:parent "dragWidget"
+                :arguments 
+                  ( ("event" variable
+                       (:pointer 1
+                        :type ("QMouseEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1365 1384]))                  
+                :type "void")
+                nil [1333 1644])
+            ("mouseReleaseEvent" function
+               (:parent "dragWidget"
+                :arguments 
+                  ( ("event" variable
+                       (:pointer 1
+                        :type ("QMouseEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1681 1700]))                  
+                :type "void")
+                nil [1646 1767])
+            ("drawImage" function
+               (:parent "dragWidget"
+                :type "void")
+                nil [1769 2463])
+            ("loadImage" function
+               (:parent "dragWidget"
+                :arguments 
+                  ( ("img" variable
+                       (:reference 1
+                        :type ("QPixmap" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2492 2505])
+                    ("fit" variable (:type "bool") (reparse-symbol arg-sub-list) [2506 2515]))                  
+                :type "void")
+                nil [2465 3020])
+            ("toggleGrid" function
+               (:parent "dragWidget"
+                :arguments 
+                  ( ("is_show" variable (:type "bool") (reparse-symbol arg-sub-list) [3050 3063]))                  
+                :type "void")
+                nil [3022 3112])
+            ("scaleImage" function
+               (:parent "dragWidget"
+                :arguments 
+                  ( ("scale" variable (:type "int") (reparse-symbol arg-sub-list) [3142 3152]))                  
+                :type "void")
+                nil [3114 3231]))          
+    :file "dragWidget.cpp"
+    :pointmax 3201
+    :fsize 3231
+    :lastmodtime '(20408 25892)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "dragWidget.h"
+    :file "dragWidget.h"
+    :fsize 1056
+    :lastmodtime '(20363 49327)
+    )
+   )
+  :file "!home!feng!paper_stuff!captcha_breaker!client!apps!captcha_breaker_qt4!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )
