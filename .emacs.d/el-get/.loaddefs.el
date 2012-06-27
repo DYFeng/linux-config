@@ -4,7 +4,7 @@
 
 
 ;;;### (autoloads (turn-on-bib-cite bib-cite-minor-mode) "bib-cite"
-;;;;;;  "auctex/bib-cite.el" (18341 54637))
+;;;;;;  "auctex/bib-cite.el" (20448 23280))
 ;;; Generated autoloads from auctex/bib-cite.el
 
 (autoload 'bib-cite-minor-mode "bib-cite" "\
@@ -26,7 +26,7 @@ Unconditionally turn on Bib Cite mode.
 ;;;;;;  color-theme-compare color-theme-make-snapshot color-theme-analyze-defun
 ;;;;;;  color-theme-print color-theme-install-at-point-for-current-frame
 ;;;;;;  color-theme-install-at-mouse color-theme-describe color-theme-select)
-;;;;;;  "color-theme" "color-theme/color-theme.el" (17529 41105))
+;;;;;;  "color-theme" "color-theme/color-theme.el" (20448 23283))
 ;;; Generated autoloads from color-theme/color-theme.el
 
 (autoload 'color-theme-select "color-theme" "\
@@ -162,7 +162,7 @@ Initialize the color theme package by loading color-theme-libraries.
 ;;;***
 
 ;;;### (autoloads (color-theme-desert) "color-theme-desert" "color-theme-desert/color-theme-desert.el"
-;;;;;;  (20396 50051))
+;;;;;;  (20448 23283))
 ;;; Generated autoloads from color-theme-desert/color-theme-desert.el
 
 (autoload 'color-theme-desert "color-theme-desert" "\
@@ -172,8 +172,8 @@ Emacs color theme desert, inspired by VIM desert theme.
 
 ;;;***
 
-;;;### (autoloads (context-mode) "context" "auctex/context.el" (19707
-;;;;;;  64211))
+;;;### (autoloads (context-mode) "context" "auctex/context.el" (20448
+;;;;;;  23282))
 ;;; Generated autoloads from auctex/context.el
 
 (defalias 'ConTeXt-mode 'context-mode)
@@ -193,7 +193,7 @@ of context-mode-hook.
 ;;;***
 
 ;;;### (autoloads (context-en-mode) "context-en" "auctex/context-en.el"
-;;;;;;  (19618 16518))
+;;;;;;  (20448 23280))
 ;;; Generated autoloads from auctex/context-en.el
 
 (autoload 'context-en-mode "context-en" "\
@@ -211,7 +211,7 @@ of context-mode-hook.
 ;;;***
 
 ;;;### (autoloads (context-nl-mode) "context-nl" "auctex/context-nl.el"
-;;;;;;  (19618 16529))
+;;;;;;  (20448 23280))
 ;;; Generated autoloads from auctex/context-nl.el
 
 (autoload 'context-nl-mode "context-nl" "\
@@ -228,8 +228,8 @@ of context-mode-hook.
 
 ;;;***
 
-;;;### (autoloads nil "doxymacs" "doxymacs/lisp/doxymacs.el" (20435
-;;;;;;  28811))
+;;;### (autoloads nil "doxymacs" "doxymacs/lisp/doxymacs.el" (20455
+;;;;;;  21644))
 ;;; Generated autoloads from doxymacs/lisp/doxymacs.el
 
 (or (assoc 'doxymacs-mode minor-mode-alist) (setq minor-mode-alist (cons '(doxymacs-mode " doxy") minor-mode-alist)))
@@ -237,7 +237,7 @@ of context-mode-hook.
 ;;;***
 
 ;;;### (autoloads (font-latex-setup) "font-latex" "auctex/font-latex.el"
-;;;;;;  (19901 29725))
+;;;;;;  (20448 23282))
 ;;; Generated autoloads from auctex/font-latex.el
 
 (autoload 'font-latex-setup "font-latex" "\
@@ -248,7 +248,7 @@ Setup this buffer for LaTeX font-lock.  Usually called from a hook.
 ;;;***
 
 ;;;### (autoloads (docTeX-mode TeX-latex-mode BibTeX-auto-store)
-;;;;;;  "latex" "auctex/latex.el" (20030 45082))
+;;;;;;  "latex" "auctex/latex.el" (20448 23282))
 ;;; Generated autoloads from auctex/latex.el
 
 (autoload 'BibTeX-auto-store "latex" "\
@@ -287,7 +287,7 @@ runs the hooks in `docTeX-mode-hook'.
 
 ;;;### (autoloads (linum-update-window linum+-generate-linum-format
 ;;;;;;  linum+-smart-format linum+-dynamic-format linum-format) "linum+"
-;;;;;;  "linum+/linum+.el" (20435 28812))
+;;;;;;  "linum+/linum+.el" (20455 21645))
 ;;; Generated autoloads from linum+/linum+.el
 
 (defvar linum-format 'smart "\
@@ -332,7 +332,7 @@ Update line numbers for the portion visible in window WIN.
 ;;;***
 
 ;;;### (autoloads (markdown-mode) "markdown-mode" "markdown-mode/markdown-mode.el"
-;;;;;;  (20411 54606))
+;;;;;;  (20448 23289))
 ;;; Generated autoloads from markdown-mode/markdown-mode.el
 
 (autoload 'markdown-mode "markdown-mode" "\
@@ -343,7 +343,7 @@ Major mode for editing Markdown files.
 ;;;***
 
 ;;;### (autoloads (multi-prompt-key-value multi-prompt) "multi-prompt"
-;;;;;;  "auctex/multi-prompt.el" (18915 28236))
+;;;;;;  "auctex/multi-prompt.el" (20448 23280))
 ;;; Generated autoloads from auctex/multi-prompt.el
 
 (autoload 'multi-prompt "multi-prompt" "\
@@ -375,7 +375,7 @@ The return value is the string as entered in the minibuffer.
 ;;;### (autoloads (nxhtml-byte-recompile-file nxhtml-byte-compile-file
 ;;;;;;  nxhtml-get-missing-files nxhtml-update-existing-files nxhtml-setup-download-all
 ;;;;;;  nxhtml-setup-auto-download nxhtml-setup-install) "nxhtml-web-vcs"
-;;;;;;  "nxhtml/nxhtml-web-vcs.el" (20413 2535))
+;;;;;;  "nxhtml/nxhtml-web-vcs.el" (20448 23295))
 ;;; Generated autoloads from nxhtml/nxhtml-web-vcs.el
 
 (autoload 'nxhtml-setup-install "nxhtml-web-vcs" "\
@@ -492,7 +492,7 @@ Loading is done if recompiled and LOAD is t.
 
 ;;;### (autoloads (nxhtmlmaint-byte-uncompile-all nxhtmlmaint-byte-recompile
 ;;;;;;  nxhtmlmaint-start-byte-compilation) "nxhtmlmaint" "nxhtml/nxhtmlmaint.el"
-;;;;;;  (20413 2535))
+;;;;;;  (20448 23295))
 ;;; Generated autoloads from nxhtml/nxhtmlmaint.el
 
 (autoload 'nxhtmlmaint-start-byte-compilation "nxhtmlmaint" "\
@@ -528,8 +528,26 @@ See `nxhtmlmaint-start-byte-compilation' for byte compiling.
 
 ;;;***
 
+;;;### (autoloads (php-mode php-file-patterns) "php-mode" "php-mode/php-mode.el"
+;;;;;;  (20457 27801))
+;;; Generated autoloads from php-mode/php-mode.el
+
+(defvar php-file-patterns '("\\.php[s34]?\\'" "\\.phtml\\'" "\\.inc\\'") "\
+List of file patterns for which to automatically invoke `php-mode'.")
+
+(custom-autoload 'php-file-patterns "php-mode" nil)
+
+(autoload 'php-mode "php-mode" "\
+Major mode for editing PHP code.
+
+\\{php-mode-map}
+
+\(fn)" t nil)
+
+;;;***
+
 ;;;### (autoloads (ams-tex-mode TeX-plain-tex-mode) "plain-tex" "auctex/plain-tex.el"
-;;;;;;  (19707 64159))
+;;;;;;  (20448 23280))
 ;;; Generated autoloads from auctex/plain-tex.el
 
 (autoload 'TeX-plain-tex-mode "plain-tex" "\
@@ -561,7 +579,7 @@ of `AmS-TeX-mode-hook'.
 ;;;***
 
 ;;;### (autoloads (preview-report-bug LaTeX-preview-setup preview-install-styles)
-;;;;;;  "preview" "auctex/preview/preview.el" (19772 31043))
+;;;;;;  "preview" "auctex/preview/preview.el" (20448 23281))
 ;;; Generated autoloads from auctex/preview/preview.el
 
 (autoload 'preview-install-styles "preview" "\
@@ -592,9 +610,178 @@ Report a bug in the preview-latex package.
 
 ;;;***
 
+;;;### (autoloads (tabbar-mwheel-mode tabbar-mode tabbar-local-mode
+;;;;;;  tabbar-mwheel-switch-group tabbar-mwheel-switch-tab tabbar-mwheel-forward-tab
+;;;;;;  tabbar-mwheel-backward-tab tabbar-mwheel-forward-group tabbar-mwheel-backward-group
+;;;;;;  tabbar-mwheel-forward tabbar-mwheel-backward tabbar-press-scroll-right
+;;;;;;  tabbar-press-scroll-left tabbar-press-home tabbar-forward-tab
+;;;;;;  tabbar-backward-tab tabbar-forward-group tabbar-backward-group
+;;;;;;  tabbar-forward tabbar-backward) "tabbar" "tabbar/tabbar.el"
+;;;;;;  (20457 19702))
+;;; Generated autoloads from tabbar/tabbar.el
+
+(autoload 'tabbar-backward "tabbar" "\
+Select the previous available tab.
+Depend on the setting of the option `tabbar-cycle-scope'.
+
+\(fn)" t nil)
+
+(autoload 'tabbar-forward "tabbar" "\
+Select the next available tab.
+Depend on the setting of the option `tabbar-cycle-scope'.
+
+\(fn)" t nil)
+
+(autoload 'tabbar-backward-group "tabbar" "\
+Go to selected tab in the previous available group.
+
+\(fn)" t nil)
+
+(autoload 'tabbar-forward-group "tabbar" "\
+Go to selected tab in the next available group.
+
+\(fn)" t nil)
+
+(autoload 'tabbar-backward-tab "tabbar" "\
+Select the previous visible tab.
+
+\(fn)" t nil)
+
+(autoload 'tabbar-forward-tab "tabbar" "\
+Select the next visible tab.
+
+\(fn)" t nil)
+
+(autoload 'tabbar-press-home "tabbar" "\
+Press the tab bar home button.
+That is, simulate a mouse click on that button.
+A numeric prefix ARG value of 2, or 3, respectively simulates a
+mouse-2, or mouse-3 click.  The default is a mouse-1 click.
+
+\(fn &optional ARG)" t nil)
+
+(autoload 'tabbar-press-scroll-left "tabbar" "\
+Press the tab bar scroll-left button.
+That is, simulate a mouse click on that button.
+A numeric prefix ARG value of 2, or 3, respectively simulates a
+mouse-2, or mouse-3 click.  The default is a mouse-1 click.
+
+\(fn &optional ARG)" t nil)
+
+(autoload 'tabbar-press-scroll-right "tabbar" "\
+Press the tab bar scroll-right button.
+That is, simulate a mouse click on that button.
+A numeric prefix ARG value of 2, or 3, respectively simulates a
+mouse-2, or mouse-3 click.  The default is a mouse-1 click.
+
+\(fn &optional ARG)" t nil)
+
+(autoload 'tabbar-mwheel-backward "tabbar" "\
+Select the previous available tab.
+EVENT is the mouse event that triggered this command.
+Mouse-enabled equivalent of the command `tabbar-backward'.
+
+\(fn EVENT)" t nil)
+
+(autoload 'tabbar-mwheel-forward "tabbar" "\
+Select the next available tab.
+EVENT is the mouse event that triggered this command.
+Mouse-enabled equivalent of the command `tabbar-forward'.
+
+\(fn EVENT)" t nil)
+
+(autoload 'tabbar-mwheel-backward-group "tabbar" "\
+Go to selected tab in the previous available group.
+If there is only one group, select the previous visible tab.
+EVENT is the mouse event that triggered this command.
+Mouse-enabled equivalent of the command `tabbar-backward-group'.
+
+\(fn EVENT)" t nil)
+
+(autoload 'tabbar-mwheel-forward-group "tabbar" "\
+Go to selected tab in the next available group.
+If there is only one group, select the next visible tab.
+EVENT is the mouse event that triggered this command.
+Mouse-enabled equivalent of the command `tabbar-forward-group'.
+
+\(fn EVENT)" t nil)
+
+(autoload 'tabbar-mwheel-backward-tab "tabbar" "\
+Select the previous visible tab.
+EVENT is the mouse event that triggered this command.
+Mouse-enabled equivalent of the command `tabbar-backward-tab'.
+
+\(fn EVENT)" t nil)
+
+(autoload 'tabbar-mwheel-forward-tab "tabbar" "\
+Select the next visible tab.
+EVENT is the mouse event that triggered this command.
+Mouse-enabled equivalent of the command `tabbar-forward-tab'.
+
+\(fn EVENT)" t nil)
+
+(autoload 'tabbar-mwheel-switch-tab "tabbar" "\
+Select the next or previous tab according to EVENT.
+
+\(fn EVENT)" t nil)
+
+(autoload 'tabbar-mwheel-switch-group "tabbar" "\
+Select the next or previous group of tabs according to EVENT.
+
+\(fn EVENT)" t nil)
+
+(autoload 'tabbar-local-mode "tabbar" "\
+Toggle local display of the tab bar.
+With prefix argument ARG, turn on if positive, otherwise off.
+Returns non-nil if the new state is enabled.
+When turned on, if a local header line is shown, it is hidden to show
+the tab bar.  The tab bar is locally hidden otherwise.  When turned
+off, if a local header line is hidden or the tab bar is locally
+hidden, it is shown again.  Signal an error if Tabbar mode is off.
+
+\(fn &optional ARG)" t nil)
+
+(defvar tabbar-mode nil "\
+Non-nil if Tabbar mode is enabled.
+See the command `tabbar-mode' for a description of this minor mode.
+Setting this variable directly does not take effect;
+either customize it (see the info node `Easy Customization')
+or call the function `tabbar-mode'.")
+
+(custom-autoload 'tabbar-mode "tabbar" nil)
+
+(autoload 'tabbar-mode "tabbar" "\
+Toggle display of a tab bar in the header line.
+With prefix argument ARG, turn on if positive, otherwise off.
+Returns non-nil if the new state is enabled.
+
+\\{tabbar-mode-map}
+
+\(fn &optional ARG)" t nil)
+
+(defvar tabbar-mwheel-mode nil "\
+Non-nil if Tabbar-Mwheel mode is enabled.
+See the command `tabbar-mwheel-mode' for a description of this minor mode.
+Setting this variable directly does not take effect;
+either customize it (see the info node `Easy Customization')
+or call the function `tabbar-mwheel-mode'.")
+
+(custom-autoload 'tabbar-mwheel-mode "tabbar" nil)
+
+(autoload 'tabbar-mwheel-mode "tabbar" "\
+Toggle use of the mouse wheel to navigate through tabs or groups.
+With prefix argument ARG, turn on if positive, otherwise off.
+Returns non-nil if the new state is enabled.
+
+\\{tabbar-mwheel-mode-map}
+
+\(fn &optional ARG)" t nil)
+
+;;;***
+
 ;;;### (autoloads (TeX-submit-bug-report TeX-auto-generate-global
-;;;;;;  TeX-auto-generate TeX-tex-mode) "tex" "auctex/tex.el" (20376
-;;;;;;  60743))
+;;;;;;  TeX-auto-generate TeX-tex-mode) "tex" "auctex/tex.el" (20455
+;;;;;;  21633))
 ;;; Generated autoloads from auctex/tex.el
 
 (autoload 'TeX-tex-mode "tex" "\
@@ -636,7 +823,7 @@ information about your AUCTeX version and AUCTeX configuration.
 ;;;***
 
 ;;;### (autoloads (LaTeX-install-toolbar TeX-install-toolbar) "tex-bar"
-;;;;;;  "auctex/tex-bar.el" (18580 49499))
+;;;;;;  "auctex/tex-bar.el" (20448 23282))
 ;;; Generated autoloads from auctex/tex-bar.el
 
 (autoload 'TeX-install-toolbar "tex-bar" "\
@@ -651,7 +838,7 @@ Install toolbar buttons for LaTeX mode.
 
 ;;;***
 
-;;;### (autoloads nil "tex-fold" "auctex/tex-fold.el" (19887 15736))
+;;;### (autoloads nil "tex-fold" "auctex/tex-fold.el" (20448 23282))
 ;;; Generated autoloads from auctex/tex-fold.el
  (autoload 'TeX-fold-mode "tex-fold" "Minor mode for hiding and revealing macros and environments." t)
 
@@ -660,7 +847,7 @@ Install toolbar buttons for LaTeX mode.
 ;;;***
 
 ;;;### (autoloads (tex-font-setup) "tex-font" "auctex/tex-font.el"
-;;;;;;  (18341 54636))
+;;;;;;  (20448 23282))
 ;;; Generated autoloads from auctex/tex-font.el
 
 (autoload 'tex-font-setup "tex-font" "\
@@ -671,7 +858,7 @@ Setup font lock support for TeX.
 ;;;***
 
 ;;;### (autoloads (TeX-texinfo-mode) "tex-info" "auctex/tex-info.el"
-;;;;;;  (19994 65094))
+;;;;;;  (20448 23282))
 ;;; Generated autoloads from auctex/tex-info.el
 
 (defalias 'Texinfo-mode 'texinfo-mode)
@@ -690,7 +877,7 @@ value of `Texinfo-mode-hook'.
 ;;;***
 
 ;;;### (autoloads (japanese-latex-mode japanese-plain-tex-mode) "tex-jp"
-;;;;;;  "auctex/tex-jp.el" (18768 5174))
+;;;;;;  "auctex/tex-jp.el" (20448 23282))
 ;;; Generated autoloads from auctex/tex-jp.el
 
 (autoload 'japanese-plain-tex-mode "tex-jp" "\
@@ -708,7 +895,7 @@ Set `japanese-TeX-mode' to t, and enter `TeX-latex-mode'.
 ;;;***
 
 ;;;### (autoloads (texmathp-match-switch texmathp) "texmathp" "auctex/texmathp.el"
-;;;;;;  (18489 3128))
+;;;;;;  (20448 23282))
 ;;; Generated autoloads from auctex/texmathp.el
 
 (autoload 'texmathp "texmathp" "\
@@ -728,7 +915,7 @@ Limit searched to BOUND.
 
 ;;;***
 
-;;;### (autoloads nil "toolbar-x" "auctex/toolbar-x.el" (18580 49487))
+;;;### (autoloads nil "toolbar-x" "auctex/toolbar-x.el" (20448 23282))
 ;;; Generated autoloads from auctex/toolbar-x.el
  (autoload 'toolbarx-install-toolbar "toolbar-x")
 
@@ -737,7 +924,7 @@ Limit searched to BOUND.
 ;;;### (autoloads (web-vcs-investigate-elisp-file web-vcs-url-copy-file
 ;;;;;;  web-vcs-url-retrieve-synch web-vcs-byte-compile-file web-vcs-message-with-face
 ;;;;;;  web-vcs-get-files-from-root web-vcs-log-edit web-vcs-default-download-directory)
-;;;;;;  "web-vcs" "nxhtml/web-vcs.el" (20413 2535))
+;;;;;;  "web-vcs" "nxhtml/web-vcs.el" (20448 23298))
 ;;; Generated autoloads from nxhtml/web-vcs.el
 
 (autoload 'web-vcs-default-download-directory "web-vcs" "\
@@ -808,7 +995,7 @@ Not documented
 ;;;***
 
 ;;;### (autoloads (xml-reformat-tags insert-xml read-xml) "xml-parse"
-;;;;;;  "doxymacs/lisp/xml-parse.el" (20430 10878))
+;;;;;;  "doxymacs/lisp/xml-parse.el" (20448 23284))
 ;;; Generated autoloads from doxymacs/lisp/xml-parse.el
 
 (autoload 'read-xml "xml-parse" "\
@@ -846,18 +1033,6 @@ If point is on the open bracket of an XML tag, reformat that tree.
 Note that this only works if the opening tag starts at column 0.
 
 \(fn)" t nil)
-
-;;;***
-
-;;;### (autoloads nil nil ("auctex/lpath.el" "auctex/preview/prv-emacs.el"
-;;;;;;  "auctex/preview/prv-install.el" "auctex/preview/prv-xemacs.el"
-;;;;;;  "auctex/tex-buf.el" "auctex/tex-mik.el" "auctex/tex-style.el"
-;;;;;;  "auctex/tex-wizard.el" "auto-complete/auto-complete-config.el"
-;;;;;;  "auto-complete/auto-complete-pkg.el" "color-theme/color-theme-autoloads.el"
-;;;;;;  "el-get/el-get-install.el" "el-get/el-get.el" "irc/irc.el"
-;;;;;;  "nxhtml/autostart.el" "nxhtml/autostart22.el" "nxhtml/nxhtml-base.el"
-;;;;;;  "nxhtml/web-autoload.el" "popup/popup-test.el" "popup/popup.el")
-;;;;;;  (20438 8471 128441))
 
 ;;;***
 
